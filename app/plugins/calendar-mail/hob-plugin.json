@@ -1,29 +1,19 @@
 {
   "id": "calendar-mail",
-  "name": "Calendar & Mail",
-  "version": "1.0.0",
-  "description": "Your calendar and email, through the Mac's own Calendar and Mail apps, with every account added there. Hob writes email drafts; you send them.",
+  "name": "Calendar, Mail & Reminders",
+  "version": "1.1.0",
+  "description": "Your calendar, email and reminders, through the Mac's own Calendar, Mail and Reminders apps, with every account added there. Hob writes email drafts; you send them.",
   "author": "Hob",
   "icon": "calendar",
-  "platforms": [
-    "darwin"
-  ],
+  "platforms": ["darwin"],
   "tools": [
-    {
-      "native": "calendar_events"
-    },
-    {
-      "native": "calendar_add_event"
-    },
-    {
-      "native": "mail_search"
-    },
-    {
-      "native": "mail_read"
-    },
-    {
-      "native": "mail_draft"
-    }
+    { "native": "calendar_events" },
+    { "native": "calendar_add_event" },
+    { "native": "mail_search" },
+    { "native": "mail_read" },
+    { "native": "mail_draft" },
+    { "native": "reminders_list" },
+    { "native": "reminder_add" }
   ],
-  "prompt": "For the user's calendar use calendar_events and calendar_add_event; for email use mail_search, mail_read and mail_draft (drafts only: the user sends). They use the calendar and email the user connected (a Google or Microsoft account, or the Mac's Calendar and Mail apps): don't ask the user to set up a connector for Google Calendar, Gmail or Outlook. If a tool says nothing is connected, tell the user how to connect."
+  "prompt": "For the user's calendar use calendar_events and calendar_add_event; for email use mail_search, mail_read and mail_draft (drafts only: the user sends); and for Reminders use reminders_list and reminder_add. They use the calendar, email and reminder accounts the user connected (a Google or Microsoft account, or the Mac's Calendar, Mail and Reminders apps): don't ask the user to set up a connector for these. Reminders access is requested by macOS the first time Hob uses Reminders. Always get approval before adding a reminder. If access is denied, direct the user to System Settings → Privacy & Security → Reminders."
 }
