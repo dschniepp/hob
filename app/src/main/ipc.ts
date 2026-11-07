@@ -358,11 +358,11 @@ export function registerIpc(d: IpcDeps): { openPluginFile(path: string): Promise
     return r.canceled ? null : (r.filePaths[0] ?? null)
   })
   // Calendar & Mail on a Mac: ask nothing until the user chooses to connect, then the system's own prompts
-  let fakeMac = { calendar: 'notDetermined', mail: 'notDetermined' }
+  let fakeMac = { calendar: 'notDetermined', mail: 'notDetermined', reminders: 'notDetermined' }
   ipcMain.handle('mac:access', async () => (process.platform !== 'darwin' ? null : d.fake ? fakeMac : macAccess()))
   ipcMain.handle('mac:ask', async () => {
     if (process.platform !== 'darwin') return null
-    const r = d.fake ? (fakeMac = { calendar: 'granted', mail: 'granted' }) : await askMacAccess()
+    const r = d.fake ? (fakeMac = { calendar: 'granted', mail: 'granted', reminders: 'granted' }) : await askMacAccess()
     send('mac:access', r)
     return r
   })

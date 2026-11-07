@@ -762,5 +762,8 @@
   "Added “{title}” to Reminders": "Το «{title}» προστέθηκε στις Υπενθυμίσεις",
   "List: {name}": "Λίστα: {name}",
   "Looked at your reminders": "Ελέγχθηκαν οι υπενθυμίσεις σας",
-  "Searched your reminders for “{query}”": "Αναζήτηση στις υπενθυμίσεις σας για «{query}»"
+  "Searched your reminders for “{query}”": "Αναζήτηση στις υπενθυμίσεις σας για «{query}»",
+  "Reminders": "Υπενθυμίσεις",
+  "Allow Reminders": "Να επιτρέπονται οι Υπενθυμίσεις",
+  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "Για να χρησιμοποιήσετε τις Υπενθυμίσεις, επιτρέψτε το Hob στις Ρυθμίσεις συστήματος → Απόρρητο και ασφάλεια → Υπενθυμίσεις."
 }

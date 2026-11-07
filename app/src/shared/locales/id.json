@@ -708,5 +708,8 @@
   "Added “{title}” to Reminders": "“{title}” ditambahkan ke Pengingat",
   "List: {name}": "Daftar: {name}",
   "Looked at your reminders": "Melihat pengingat Anda",
-  "Searched your reminders for “{query}”": "Mencari “{query}” di pengingat Anda"
+  "Searched your reminders for “{query}”": "Mencari “{query}” di pengingat Anda",
+  "Reminders": "Pengingat",
+  "Allow Reminders": "Izinkan Pengingat",
+  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "Untuk memakai Pengingat, izinkan Hob di Pengaturan Sistem → Privasi & Keamanan → Pengingat."
 }

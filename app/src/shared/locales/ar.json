@@ -834,5 +834,8 @@
   "Added “{title}” to Reminders": "تمت إضافة «{title}» إلى التذكيرات",
   "List: {name}": "القائمة: {name}",
   "Looked at your reminders": "تم الاطلاع على تذكيراتك",
-  "Searched your reminders for “{query}”": "تم البحث في تذكيراتك عن «{query}»"
+  "Searched your reminders for “{query}”": "تم البحث في تذكيراتك عن «{query}»",
+  "Reminders": "التذكيرات",
+  "Allow Reminders": "السماح بالتذكيرات",
+  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "لاستخدام التذكيرات، اسمح لـ Hob في إعدادات النظام ← الخصوصية والأمان ← التذكيرات."
 }

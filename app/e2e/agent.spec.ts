@@ -337,6 +337,8 @@ test('Mac: "Connect my email and calendar" asks for access once, then Hob reads 
   await expect(page.getByTestId('connect-apps')).toContainText('Calendar and Mail apps on this Mac')
   await page.getByTestId('connect-apps-allow').click()
   await expect(page.getByRole('heading', { name: 'Email and calendar connected' })).toBeVisible()
+  await expect(page.getByTestId('connect-apps')).toContainText('Reminders')
+  await expect(page.getByTestId('reminders-allow')).toHaveCount(0)
   await page.getByTestId('connect-apps-try').click()
   await expect(page.getByTestId('connect-apps')).toBeHidden()
   await expect(page.getByTestId('composer-input')).toHaveValue("What's on my calendar this week?")

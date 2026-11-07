@@ -780,5 +780,8 @@
   "Added “{title}” to Reminders": "«{title}» añadido a Recordatorios",
   "List: {name}": "Lista: {name}",
   "Looked at your reminders": "Recordatorios consultados",
-  "Searched your reminders for “{query}”": "Búsqueda de «{query}» en tus recordatorios"
+  "Searched your reminders for “{query}”": "Búsqueda de «{query}» en tus recordatorios",
+  "Reminders": "Recordatorios",
+  "Allow Reminders": "Permitir Recordatorios",
+  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "Para usar Recordatorios, permite a Hob en Ajustes del Sistema → Privacidad y seguridad → Recordatorios."
 }

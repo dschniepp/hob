@@ -762,5 +762,8 @@
   "Added “{title}” to Reminders": "”{title}” lisätty Muistutuksiin",
   "List: {name}": "Lista: {name}",
   "Looked at your reminders": "Katsoi muistutuksiasi",
-  "Searched your reminders for “{query}”": "Haki muistutuksistasi: ”{query}”"
+  "Searched your reminders for “{query}”": "Haki muistutuksistasi: ”{query}”",
+  "Reminders": "Muistutukset",
+  "Allow Reminders": "Salli Muistutukset",
+  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "Jos haluat käyttää Muistutuksia, salli Hob kohdassa Järjestelmäasetukset → Tietosuoja ja turvallisuus → Muistutukset."
 }

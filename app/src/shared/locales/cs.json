@@ -798,5 +798,8 @@
   "Added “{title}” to Reminders": "„{title}“ přidáno do Připomínek",
   "List: {name}": "Seznam: {name}",
   "Looked at your reminders": "Prohlédnuty vaše připomínky",
-  "Searched your reminders for “{query}”": "V připomínkách hledáno „{query}“"
+  "Searched your reminders for “{query}”": "V připomínkách hledáno „{query}“",
+  "Reminders": "Připomínky",
+  "Allow Reminders": "Povolit Připomínky",
+  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "Chcete-li používat Připomínky, povolte Hob v Nastavení systému → Soukromí a zabezpečení → Připomínky."
 }

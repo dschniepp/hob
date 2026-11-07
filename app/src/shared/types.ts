@@ -15,8 +15,8 @@ export type ModelOption = ModelSummary & {
   needsDiskGB: number
 }
 
-/** may Hob use Calendar and Mail: granted, denied, notDetermined (not asked yet), notRunning (Mail isn't open), unavailable */
-export type MacAccess = { calendar: string; mail: string }
+/** may Hob use Calendar, Mail and Reminders: granted, denied, notDetermined (not asked yet), notRunning (Mail isn't open), unavailable */
+export type MacAccess = { calendar: string; mail: string; reminders?: string }
 /** Google or Microsoft sign-in for calendar and email: what can be signed in to, and who is */
 export type AccountsState = { available: ('google' | 'microsoft')[]; current: { provider: 'google' | 'microsoft'; email: string } | null }
 

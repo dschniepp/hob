@@ -708,5 +708,8 @@
   "Added “{title}” to Reminders": "Đã thêm “{title}” vào Lời nhắc",
   "List: {name}": "Danh sách: {name}",
   "Looked at your reminders": "Đã xem lời nhắc của bạn",
-  "Searched your reminders for “{query}”": "Đã tìm “{query}” trong lời nhắc của bạn"
+  "Searched your reminders for “{query}”": "Đã tìm “{query}” trong lời nhắc của bạn",
+  "Reminders": "Lời nhắc",
+  "Allow Reminders": "Cho phép Lời nhắc",
+  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "Để dùng Lời nhắc, hãy cho phép Hob trong Cài đặt hệ thống → Quyền riêng tư & Bảo mật → Lời nhắc."
 }

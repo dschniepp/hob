@@ -708,5 +708,8 @@
   "Added “{title}” to Reminders": "已将“{title}”添加到提醒事项",
   "List: {name}": "列表：{name}",
   "Looked at your reminders": "查看了你的提醒事项",
-  "Searched your reminders for “{query}”": "在你的提醒事项中搜索了“{query}”"
+  "Searched your reminders for “{query}”": "在你的提醒事项中搜索了“{query}”",
+  "Reminders": "提醒事项",
+  "Allow Reminders": "允许提醒事项",
+  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "要使用提醒事项，请在“系统设置”→“隐私与安全性”→“提醒事项”中允许 Hob。"
 }

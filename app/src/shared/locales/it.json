@@ -780,5 +780,8 @@
   "Added “{title}” to Reminders": "“{title}” aggiunto a Promemoria",
   "List: {name}": "Elenco: {name}",
   "Looked at your reminders": "Promemoria consultati",
-  "Searched your reminders for “{query}”": "Cercato “{query}” nei tuoi promemoria"
+  "Searched your reminders for “{query}”": "Cercato “{query}” nei tuoi promemoria",
+  "Reminders": "Promemoria",
+  "Allow Reminders": "Consenti Promemoria",
+  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "Per usare Promemoria, consenti a Hob in Impostazioni di Sistema → Privacy e sicurezza → Promemoria."
 }

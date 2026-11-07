@@ -780,5 +780,8 @@
   "Added “{title}” to Reminders": "“{title}” נוסף לתזכורות",
   "List: {name}": "רשימה: {name}",
   "Looked at your reminders": "נבדקו התזכורות שלך",
-  "Searched your reminders for “{query}”": "חיפוש “{query}” בתזכורות שלך"
+  "Searched your reminders for “{query}”": "חיפוש “{query}” בתזכורות שלך",
+  "Reminders": "תזכורות",
+  "Allow Reminders": "לאפשר תזכורות",
+  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "כדי להשתמש בתזכורות, אפשר ל-Hob בהגדרות המערכת ← פרטיות ואבטחה ← תזכורות."
 }

@@ -762,5 +762,8 @@
   "Added “{title}” to Reminders": "„{title}“ føjet til Påmindelser",
   "List: {name}": "Liste: {name}",
   "Looked at your reminders": "Kiggede på dine påmindelser",
-  "Searched your reminders for “{query}”": "Søgte i dine påmindelser efter „{query}“"
+  "Searched your reminders for “{query}”": "Søgte i dine påmindelser efter „{query}“",
+  "Reminders": "Påmindelser",
+  "Allow Reminders": "Tillad Påmindelser",
+  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "For at bruge Påmindelser skal du give Hob adgang i Systemindstillinger → Anonymitet og sikkerhed → Påmindelser."
 }

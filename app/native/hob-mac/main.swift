@@ -5,6 +5,7 @@
 //   hob-mac calendars                      → [{"name","account","writable","color"}]
 //   hob-mac events FROM TO [QUERY]         → events between two ISO dates, optionally matching words
 //   hob-mac add-event JSON                 → {"title","start","end","calendar"?,"location"?,"notes"?,"allDay"?}
+//   hob-mac reminder-status                → {"status":"granted"|"denied"|"notDetermined"}
 //   hob-mac reminder-auth                  → asks once (the system's own prompt), then the status
 //   hob-mac reminders JSON                → [{"title","list","due"?,"notes"?}]; JSON: {"query"?,"includeCompleted"?}
 //   hob-mac add-reminder JSON              → {"title","due"?,"list"?,"notes"?}; asks for Reminders access the first time
@@ -116,6 +117,7 @@ case "add-event":
   e.calendar = cal
   do { try store.save(e, span: .thisEvent, commit: true) } catch { fail("Couldn't add the event: \(error.localizedDescription)") }
   out(["title": title, "start": iso.string(from: e.startDate), "end": iso.string(from: e.endDate), "calendar": cal.title])
+case "reminder-status": out(["status": reminderStatus()])
 case "reminder-auth":
   requestReminderAccess()
   out(["status": reminderStatus()])
@@ -176,5 +178,5 @@ case "mail-status", "mail-auth":
   AEDisposeDesc(&target)
   out(["status": r == noErr ? "granted" : r == OSStatus(errAEEventNotPermitted) ? "denied" : r == OSStatus(procNotFound) ? "notRunning" : "notDetermined"])
 default:
-  fail("usage: hob-mac calendar-status | calendar-auth | calendars | events FROM TO [QUERY] | add-event JSON | reminders JSON | add-reminder JSON | reminder-auth | mail-status | mail-auth")
+  fail("usage: hob-mac calendar-status | calendar-auth | calendars | events FROM TO [QUERY] | add-event JSON | reminders JSON | add-reminder JSON | reminder-status | reminder-auth | mail-status | mail-auth")
 }

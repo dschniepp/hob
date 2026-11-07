@@ -780,5 +780,8 @@
   "Added “{title}” to Reminders": "“{title}” adicionado aos Lembretes",
   "List: {name}": "Lista: {name}",
   "Looked at your reminders": "Lembretes consultados",
-  "Searched your reminders for “{query}”": "Busca por “{query}” nos seus lembretes"
+  "Searched your reminders for “{query}”": "Busca por “{query}” nos seus lembretes",
+  "Reminders": "Lembretes",
+  "Allow Reminders": "Permitir Lembretes",
+  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "Para usar Lembretes, permita o Hob em Ajustes do Sistema → Privacidade e Segurança → Lembretes."
 }

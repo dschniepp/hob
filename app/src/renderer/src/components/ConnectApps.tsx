@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Calendar, Check, Circle, Mail } from 'lucide-react'
+import { Bell, Calendar, Check, Circle, Mail } from 'lucide-react'
 import type { AccountsState, MacAccess } from '../../../shared/types'
 import { hob } from '../api'
 import { button, Dialog } from './ui'
@@ -95,7 +95,10 @@ export function ConnectApps({ onClose, onTry }: { onClose(): void; onTry(prompt:
           <ul className={`${done ? '' : 'mt-4'} space-y-2.5 rounded-card border border-line px-4 py-3`}>
             {row(Calendar, t('Calendar'), access?.calendar)}
             {row(Mail, t('Mail'), access?.mail)}
+            {access?.reminders !== undefined && row(Bell, t('Reminders'), access.reminders)}
           </ul>
+          {done && access?.reminders === 'notDetermined' && <button data-testid="reminders-allow" className={`${button.quiet} mt-3`} disabled={asking} onClick={() => void ask()}>{asking ? t('Waiting for your Mac…') : t('Allow Reminders')}</button>}
+          {access?.reminders === 'denied' && <p className="mt-3 text-ui text-ink-soft">{t('To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.')}</p>}
           {denied && <p className="mt-3 text-ui text-ink-soft">{t('To change it, allow Hob in System Settings → Privacy & Security → Calendars and → Automation.')}</p>}
           {providers.length > 0 && !connected(access) && (
             <>

@@ -708,5 +708,8 @@
   "Added “{title}” to Reminders": "เพิ่ม “{title}” ลงในการเตือนความจำแล้ว",
   "List: {name}": "รายการ: {name}",
   "Looked at your reminders": "ดูการเตือนความจำของคุณแล้ว",
-  "Searched your reminders for “{query}”": "ค้นหา “{query}” ในการเตือนความจำของคุณ"
+  "Searched your reminders for “{query}”": "ค้นหา “{query}” ในการเตือนความจำของคุณ",
+  "Reminders": "การเตือนความจำ",
+  "Allow Reminders": "อนุญาตการเตือนความจำ",
+  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "หากต้องการใช้การเตือนความจำ ให้อนุญาต Hob ในการตั้งค่าระบบ → ความเป็นส่วนตัวและความปลอดภัย → การเตือนความจำ"
 }

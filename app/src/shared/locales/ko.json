@@ -708,5 +708,8 @@
   "Added “{title}” to Reminders": "“{title}”을(를) 미리 알림에 추가했습니다",
   "List: {name}": "목록: {name}",
   "Looked at your reminders": "미리 알림을 확인했습니다",
-  "Searched your reminders for “{query}”": "미리 알림에서 “{query}” 검색했습니다"
+  "Searched your reminders for “{query}”": "미리 알림에서 “{query}” 검색했습니다",
+  "Reminders": "미리 알림",
+  "Allow Reminders": "미리 알림 허용",
+  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "미리 알림을 사용하려면 시스템 설정 → 개인정보 보호 및 보안 → 미리 알림에서 Hob을 허용하세요."
 }

@@ -762,5 +762,8 @@
   "Added “{title}” to Reminders": "“{title}” রিমাইন্ডারে যোগ করা হয়েছে",
   "List: {name}": "তালিকা: {name}",
   "Looked at your reminders": "আপনার রিমাইন্ডার দেখা হয়েছে",
-  "Searched your reminders for “{query}”": "আপনার রিমাইন্ডারে “{query}” খোঁজা হয়েছে"
+  "Searched your reminders for “{query}”": "আপনার রিমাইন্ডারে “{query}” খোঁজা হয়েছে",
+  "Reminders": "রিমাইন্ডার",
+  "Allow Reminders": "রিমাইন্ডারের অনুমতি দিন",
+  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "রিমাইন্ডার ব্যবহার করতে সিস্টেম সেটিংস → গোপনীয়তা ও নিরাপত্তা → রিমাইন্ডারে Hob-কে অনুমতি দিন।"
 }

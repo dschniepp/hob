@@ -780,5 +780,8 @@
   "Added “{title}” to Reminders": "« {title} » ajouté aux Rappels",
   "List: {name}": "Liste : {name}",
   "Looked at your reminders": "Rappels consultés",
-  "Searched your reminders for “{query}”": "Recherche dans vos rappels : « {query} »"
+  "Searched your reminders for “{query}”": "Recherche dans vos rappels : « {query} »",
+  "Reminders": "Rappels",
+  "Allow Reminders": "Autoriser les Rappels",
+  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "Pour utiliser les Rappels, autorisez Hob dans Réglages Système → Confidentialité et sécurité → Rappels."
 }

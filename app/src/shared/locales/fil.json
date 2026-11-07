@@ -762,5 +762,8 @@
   "Added “{title}” to Reminders": "Naidagdag ang “{title}” sa Mga Paalala",
   "List: {name}": "Listahan: {name}",
   "Looked at your reminders": "Tiningnan ang iyong mga paalala",
-  "Searched your reminders for “{query}”": "Hinanap ang “{query}” sa iyong mga paalala"
+  "Searched your reminders for “{query}”": "Hinanap ang “{query}” sa iyong mga paalala",
+  "Reminders": "Mga Paalala",
+  "Allow Reminders": "Payagan ang Mga Paalala",
+  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "Para magamit ang Mga Paalala, payagan ang Hob sa System Settings → Privacy & Security → Reminders."
 }

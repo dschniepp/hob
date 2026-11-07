@@ -708,5 +708,8 @@
   "Added “{title}” to Reminders": "「{title}」をリマインダーに追加しました",
   "List: {name}": "リスト：{name}",
   "Looked at your reminders": "リマインダーを確認しました",
-  "Searched your reminders for “{query}”": "リマインダーで「{query}」を検索しました"
+  "Searched your reminders for “{query}”": "リマインダーで「{query}」を検索しました",
+  "Reminders": "リマインダー",
+  "Allow Reminders": "リマインダーを許可",
+  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "リマインダーを使うには、システム設定 → プライバシーとセキュリティ → リマインダーでHobを許可してください。"
 }

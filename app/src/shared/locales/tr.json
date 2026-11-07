@@ -762,5 +762,8 @@
   "Added “{title}” to Reminders": "“{title}” Anımsatıcılar’a eklendi",
   "List: {name}": "Liste: {name}",
   "Looked at your reminders": "Anımsatıcılarınıza bakıldı",
-  "Searched your reminders for “{query}”": "Anımsatıcılarınızda “{query}” arandı"
+  "Searched your reminders for “{query}”": "Anımsatıcılarınızda “{query}” arandı",
+  "Reminders": "Anımsatıcılar",
+  "Allow Reminders": "Anımsatıcılar’a izin ver",
+  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "Anımsatıcılar’ı kullanmak için Sistem Ayarları → Gizlilik ve Güvenlik → Anımsatıcılar bölümünde Hob’a izin verin."
 }
