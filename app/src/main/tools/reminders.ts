@@ -13,7 +13,7 @@ let helper: Helper = (args, signal) => new Promise((resolve, reject) => {
     try { resolve(JSON.parse(stdout)) } catch { reject(new Error('The Reminders helper gave an answer Hob could not read.')) }
   })
 })
-/** Tests and the app's fake mode can supply a harmless helper. */
+/** Tests and fake mode can supply a harmless helper. */
 export const setReminderHelper = (h: Helper) => { helper = h }
 
 export const remindersList: Tool<{ query?: string; includeCompleted?: boolean }> = {
@@ -39,9 +39,7 @@ export const reminderAdd: Tool<NewReminder> = {
   spec: {
     name: 'reminder_add',
     description: "Add a reminder to the user's Reminders app. due is optional (a local date/time like 2026-10-21T15:00); list is optional and defaults to the system's default list.",
-    params: { type: 'object', properties: {
-      title: { type: 'string' }, due: { type: 'string' }, list: { type: 'string' }, notes: { type: 'string' },
-    }, required: ['title'] },
+    params: { type: 'object', properties: { title: { type: 'string' }, due: { type: 'string' }, list: { type: 'string' }, notes: { type: 'string' } }, required: ['title'] },
   },
   title: (a) => t('Added “{title}” to Reminders', { title: a.title }),
   action: () => ({ kind: 'app', ask: true }),
