@@ -5,6 +5,7 @@
 //   hob-mac calendars                      → [{"name","account","writable","color"}]
 //   hob-mac events FROM TO [QUERY]         → events between two ISO dates, optionally matching words
 //   hob-mac add-event JSON                 → {"title","start","end","calendar"?,"location"?,"notes"?,"allDay"?}
+//   hob-mac reminder-auth                  → asks once (the system's own prompt), then the status
 //   hob-mac reminders JSON                → [{"title","list","due"?,"notes"?}]; JSON: {"query"?,"includeCompleted"?}
 //   hob-mac add-reminder JSON              → {"title","due"?,"list"?,"notes"?}; asks for Reminders access the first time
 //   hob-mac mail-status | mail-auth        → may Hob talk to the Mail app? (mail-auth opens Mail and asks once)
@@ -51,13 +52,17 @@ func reminderStatus() -> String {
   }
 }
 
-func needReminderAccess() {
+func requestReminderAccess() {
   if reminderStatus() != "granted" {
     let done = DispatchSemaphore(value: 0)
     if #available(macOS 14.0, *) { store.requestFullAccessToReminders { _, _ in done.signal() } }
     else { store.requestAccess(to: .reminder) { _, _ in done.signal() } }
     _ = done.wait(timeout: .now() + 120)
   }
+}
+
+func needReminderAccess() {
+  requestReminderAccess()
   if reminderStatus() != "granted" { fail("Hob doesn't have access to Reminders. Allow it in System Settings → Privacy & Security → Reminders.") }
 }
 
@@ -111,6 +116,9 @@ case "add-event":
   e.calendar = cal
   do { try store.save(e, span: .thisEvent, commit: true) } catch { fail("Couldn't add the event: \(error.localizedDescription)") }
   out(["title": title, "start": iso.string(from: e.startDate), "end": iso.string(from: e.endDate), "calendar": cal.title])
+case "reminder-auth":
+  requestReminderAccess()
+  out(["status": reminderStatus()])
 case "reminders":
   needReminderAccess()
   guard args.count >= 2, let data = args[1].data(using: .utf8), let j = try? JSONSerialization.jsonObject(with: data) as? [String: Any] else { fail("reminders needs JSON options") }
@@ -168,5 +176,5 @@ case "mail-status", "mail-auth":
   AEDisposeDesc(&target)
   out(["status": r == noErr ? "granted" : r == OSStatus(errAEEventNotPermitted) ? "denied" : r == OSStatus(procNotFound) ? "notRunning" : "notDetermined"])
 default:
-  fail("usage: hob-mac calendar-status | calendar-auth | calendars | events FROM TO [QUERY] | add-event JSON | reminders JSON | add-reminder JSON | mail-status | mail-auth")
+  fail("usage: hob-mac calendar-status | calendar-auth | calendars | events FROM TO [QUERY] | add-event JSON | reminders JSON | add-reminder JSON | reminder-auth | mail-status | mail-auth")
 }

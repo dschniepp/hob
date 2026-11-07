@@ -214,6 +214,7 @@ export async function macAccess(): Promise<{ calendar: string; mail: string }> {
     deps.helper(['calendar-status']).catch(() => ({ status: 'unavailable' })),
     deps.helper(['mail-status']).catch(() => ({ status: 'unavailable' })),
   ]) as { status: string }[]
+  await deps.helper(['reminder-auth']).catch(() => undefined) // Reminders: asked now, so the prompt doesn't appear mid-chat; the connected state stays Calendar and Mail
   return { calendar: c.status, mail: m.status }
 }
 /** the system's own prompts, one after the other */
