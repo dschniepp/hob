@@ -756,5 +756,11 @@
   "Rename chat": "Μετονομασία συνομιλίας",
   "Save as Markdown": "Αποθήκευση ως Markdown",
   "Unpin": "Ξεκαρφίτσωμα",
-  "You": "Εσύ"
+  "You": "Εσύ",
+  "Add “{title}” to Reminders on {when}?": "Προσθήκη του «{title}» στις Υπενθυμίσεις για {when};",
+  "Add “{title}” to Reminders?": "Προσθήκη του «{title}» στις Υπενθυμίσεις;",
+  "Added “{title}” to Reminders": "Το «{title}» προστέθηκε στις Υπενθυμίσεις",
+  "List: {name}": "Λίστα: {name}",
+  "Looked at your reminders": "Ελέγχθηκαν οι υπενθυμίσεις σας",
+  "Searched your reminders for “{query}”": "Αναζήτηση στις υπενθυμίσεις σας για «{query}»"
 }

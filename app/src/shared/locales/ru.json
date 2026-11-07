@@ -792,5 +792,11 @@
   "Rename chat": "Переименовать чат",
   "Save as Markdown": "Сохранить как Markdown",
   "Unpin": "Открепить",
-  "You": "Вы"
+  "You": "Вы",
+  "Add “{title}” to Reminders on {when}?": "Добавить «{title}» в Напоминания на {when}?",
+  "Add “{title}” to Reminders?": "Добавить «{title}» в Напоминания?",
+  "Added “{title}” to Reminders": "«{title}» добавлено в Напоминания",
+  "List: {name}": "Список: {name}",
+  "Looked at your reminders": "Просмотрены ваши напоминания",
+  "Searched your reminders for “{query}”": "Поиск «{query}» в ваших напоминаниях"
 }

@@ -756,5 +756,11 @@
   "Rename chat": "Sohbeti yeniden adlandır",
   "Save as Markdown": "Markdown olarak kaydet",
   "Unpin": "Sabitlemeyi kaldır",
-  "You": "Sen"
+  "You": "Sen",
+  "Add “{title}” to Reminders on {when}?": "“{title}” {when} için Anımsatıcılar’a eklensin mi?",
+  "Add “{title}” to Reminders?": "“{title}” Anımsatıcılar’a eklensin mi?",
+  "Added “{title}” to Reminders": "“{title}” Anımsatıcılar’a eklendi",
+  "List: {name}": "Liste: {name}",
+  "Looked at your reminders": "Anımsatıcılarınıza bakıldı",
+  "Searched your reminders for “{query}”": "Anımsatıcılarınızda “{query}” arandı"
 }

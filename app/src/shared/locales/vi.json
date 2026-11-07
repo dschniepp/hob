@@ -702,5 +702,11 @@
   "Rename chat": "Đổi tên đoạn chat",
   "Save as Markdown": "Lưu dưới dạng Markdown",
   "Unpin": "Bỏ ghim",
-  "You": "Bạn"
+  "You": "Bạn",
+  "Add “{title}” to Reminders on {when}?": "Thêm “{title}” vào Lời nhắc vào {when}?",
+  "Add “{title}” to Reminders?": "Thêm “{title}” vào Lời nhắc?",
+  "Added “{title}” to Reminders": "Đã thêm “{title}” vào Lời nhắc",
+  "List: {name}": "Danh sách: {name}",
+  "Looked at your reminders": "Đã xem lời nhắc của bạn",
+  "Searched your reminders for “{query}”": "Đã tìm “{query}” trong lời nhắc của bạn"
 }

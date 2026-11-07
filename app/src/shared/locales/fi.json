@@ -756,5 +756,11 @@
   "Rename chat": "Nimeä keskustelu uudelleen",
   "Save as Markdown": "Tallenna Markdownina",
   "Unpin": "Irrota",
-  "You": "Sinä"
+  "You": "Sinä",
+  "Add “{title}” to Reminders on {when}?": "Lisätäänkö ”{title}” Muistutuksiin ajalle {when}?",
+  "Add “{title}” to Reminders?": "Lisätäänkö ”{title}” Muistutuksiin?",
+  "Added “{title}” to Reminders": "”{title}” lisätty Muistutuksiin",
+  "List: {name}": "Lista: {name}",
+  "Looked at your reminders": "Katsoi muistutuksiasi",
+  "Searched your reminders for “{query}”": "Haki muistutuksistasi: ”{query}”"
 }

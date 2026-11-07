@@ -702,5 +702,11 @@
   "Rename chat": "チャットの名前を変更",
   "Save as Markdown": "Markdown として保存",
   "Unpin": "ピン留めを外す",
-  "You": "あなた"
+  "You": "あなた",
+  "Add “{title}” to Reminders on {when}?": "「{title}」を{when}のリマインダーに追加しますか？",
+  "Add “{title}” to Reminders?": "「{title}」をリマインダーに追加しますか？",
+  "Added “{title}” to Reminders": "「{title}」をリマインダーに追加しました",
+  "List: {name}": "リスト：{name}",
+  "Looked at your reminders": "リマインダーを確認しました",
+  "Searched your reminders for “{query}”": "リマインダーで「{query}」を検索しました"
 }

@@ -774,5 +774,11 @@
   "Rename chat": "שינוי שם הצ׳אט",
   "Save as Markdown": "שמירה כ-Markdown",
   "Unpin": "ביטול הצמדה",
-  "You": "את/ה"
+  "You": "את/ה",
+  "Add “{title}” to Reminders on {when}?": "להוסיף את “{title}” לתזכורות ב-{when}?",
+  "Add “{title}” to Reminders?": "להוסיף את “{title}” לתזכורות?",
+  "Added “{title}” to Reminders": "“{title}” נוסף לתזכורות",
+  "List: {name}": "רשימה: {name}",
+  "Looked at your reminders": "נבדקו התזכורות שלך",
+  "Searched your reminders for “{query}”": "חיפוש “{query}” בתזכורות שלך"
 }

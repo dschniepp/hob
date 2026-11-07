@@ -774,5 +774,11 @@
   "Rename chat": "Cambiar el nombre del chat",
   "Save as Markdown": "Guardar como Markdown",
   "Unpin": "Dejar de fijar",
-  "You": "Tú"
+  "You": "Tú",
+  "Add “{title}” to Reminders on {when}?": "¿Añadir «{title}» a Recordatorios para {when}?",
+  "Add “{title}” to Reminders?": "¿Añadir «{title}» a Recordatorios?",
+  "Added “{title}” to Reminders": "«{title}» añadido a Recordatorios",
+  "List: {name}": "Lista: {name}",
+  "Looked at your reminders": "Recordatorios consultados",
+  "Searched your reminders for “{query}”": "Búsqueda de «{query}» en tus recordatorios"
 }

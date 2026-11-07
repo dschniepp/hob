@@ -756,5 +756,11 @@
   "Rename chat": "Chat hernoemen",
   "Save as Markdown": "Opslaan als Markdown",
   "Unpin": "Losmaken",
-  "You": "Jij"
+  "You": "Jij",
+  "Add “{title}” to Reminders on {when}?": "“{title}” toevoegen aan Herinneringen op {when}?",
+  "Add “{title}” to Reminders?": "“{title}” toevoegen aan Herinneringen?",
+  "Added “{title}” to Reminders": "“{title}” toegevoegd aan Herinneringen",
+  "List: {name}": "Lijst: {name}",
+  "Looked at your reminders": "Je herinneringen bekeken",
+  "Searched your reminders for “{query}”": "In je herinneringen gezocht naar “{query}”"
 }

@@ -774,5 +774,11 @@
   "Rename chat": "Redenumește chatul",
   "Save as Markdown": "Salvează ca Markdown",
   "Unpin": "Anulează fixarea",
-  "You": "Tu"
+  "You": "Tu",
+  "Add “{title}” to Reminders on {when}?": "Adaug „{title}” la Mementouri pe {when}?",
+  "Add “{title}” to Reminders?": "Adaug „{title}” la Mementouri?",
+  "Added “{title}” to Reminders": "„{title}” a fost adăugat la Mementouri",
+  "List: {name}": "Listă: {name}",
+  "Looked at your reminders": "Mementourile tale au fost consultate",
+  "Searched your reminders for “{query}”": "S-a căutat „{query}” în mementourile tale"
 }

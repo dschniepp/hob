@@ -756,5 +756,11 @@
   "Rename chat": "Omdøb chat",
   "Save as Markdown": "Gem som Markdown",
   "Unpin": "Frigør",
-  "You": "Dig"
+  "You": "Dig",
+  "Add “{title}” to Reminders on {when}?": "Føje „{title}“ til Påmindelser den {when}?",
+  "Add “{title}” to Reminders?": "Føje „{title}“ til Påmindelser?",
+  "Added “{title}” to Reminders": "„{title}“ føjet til Påmindelser",
+  "List: {name}": "Liste: {name}",
+  "Looked at your reminders": "Kiggede på dine påmindelser",
+  "Searched your reminders for “{query}”": "Søgte i dine påmindelser efter „{query}“"
 }

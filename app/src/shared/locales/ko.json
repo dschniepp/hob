@@ -702,5 +702,11 @@
   "Rename chat": "채팅 이름 바꾸기",
   "Save as Markdown": "Markdown으로 저장",
   "Unpin": "고정 해제",
-  "You": "나"
+  "You": "나",
+  "Add “{title}” to Reminders on {when}?": "“{title}”을(를) {when} 미리 알림에 추가할까요?",
+  "Add “{title}” to Reminders?": "“{title}”을(를) 미리 알림에 추가할까요?",
+  "Added “{title}” to Reminders": "“{title}”을(를) 미리 알림에 추가했습니다",
+  "List: {name}": "목록: {name}",
+  "Looked at your reminders": "미리 알림을 확인했습니다",
+  "Searched your reminders for “{query}”": "미리 알림에서 “{query}” 검색했습니다"
 }

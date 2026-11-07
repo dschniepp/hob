@@ -702,5 +702,11 @@
   "Rename chat": "เปลี่ยนชื่อแชท",
   "Save as Markdown": "บันทึกเป็น Markdown",
   "Unpin": "เลิกปักหมุด",
-  "You": "คุณ"
+  "You": "คุณ",
+  "Add “{title}” to Reminders on {when}?": "เพิ่ม “{title}” ลงในการเตือนความจำเวลา {when} ไหม",
+  "Add “{title}” to Reminders?": "เพิ่ม “{title}” ลงในการเตือนความจำไหม",
+  "Added “{title}” to Reminders": "เพิ่ม “{title}” ลงในการเตือนความจำแล้ว",
+  "List: {name}": "รายการ: {name}",
+  "Looked at your reminders": "ดูการเตือนความจำของคุณแล้ว",
+  "Searched your reminders for “{query}”": "ค้นหา “{query}” ในการเตือนความจำของคุณ"
 }

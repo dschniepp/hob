@@ -756,5 +756,11 @@
   "Rename chat": "Byt namn på chatten",
   "Save as Markdown": "Spara som Markdown",
   "Unpin": "Lossa",
-  "You": "Du"
+  "You": "Du",
+  "Add “{title}” to Reminders on {when}?": "Lägga till ”{title}” i Påminnelser {when}?",
+  "Add “{title}” to Reminders?": "Lägga till ”{title}” i Påminnelser?",
+  "Added “{title}” to Reminders": "”{title}” tillagd i Påminnelser",
+  "List: {name}": "Lista: {name}",
+  "Looked at your reminders": "Tittade på dina påminnelser",
+  "Searched your reminders for “{query}”": "Sökte i dina påminnelser efter ”{query}”"
 }

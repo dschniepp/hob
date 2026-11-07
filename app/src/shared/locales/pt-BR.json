@@ -774,5 +774,11 @@
   "Rename chat": "Renomear conversa",
   "Save as Markdown": "Salvar como Markdown",
   "Unpin": "Desafixar",
-  "You": "Você"
+  "You": "Você",
+  "Add “{title}” to Reminders on {when}?": "Adicionar “{title}” aos Lembretes em {when}?",
+  "Add “{title}” to Reminders?": "Adicionar “{title}” aos Lembretes?",
+  "Added “{title}” to Reminders": "“{title}” adicionado aos Lembretes",
+  "List: {name}": "Lista: {name}",
+  "Looked at your reminders": "Lembretes consultados",
+  "Searched your reminders for “{query}”": "Busca por “{query}” nos seus lembretes"
 }

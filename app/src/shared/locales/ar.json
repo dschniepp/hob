@@ -828,5 +828,11 @@
   "Rename chat": "إعادة تسمية المحادثة",
   "Save as Markdown": "حفظ كملف Markdown",
   "Unpin": "إلغاء التثبيت",
-  "You": "أنت"
+  "You": "أنت",
+  "Add “{title}” to Reminders on {when}?": "إضافة «{title}» إلى التذكيرات في {when}؟",
+  "Add “{title}” to Reminders?": "إضافة «{title}» إلى التذكيرات؟",
+  "Added “{title}” to Reminders": "تمت إضافة «{title}» إلى التذكيرات",
+  "List: {name}": "القائمة: {name}",
+  "Looked at your reminders": "تم الاطلاع على تذكيراتك",
+  "Searched your reminders for “{query}”": "تم البحث في تذكيراتك عن «{query}»"
 }

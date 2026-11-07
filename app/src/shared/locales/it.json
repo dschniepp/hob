@@ -774,5 +774,11 @@
   "Rename chat": "Rinomina chat",
   "Save as Markdown": "Salva come Markdown",
   "Unpin": "Sblocca",
-  "You": "Tu"
+  "You": "Tu",
+  "Add “{title}” to Reminders on {when}?": "Aggiungere “{title}” a Promemoria per {when}?",
+  "Add “{title}” to Reminders?": "Aggiungere “{title}” a Promemoria?",
+  "Added “{title}” to Reminders": "“{title}” aggiunto a Promemoria",
+  "List: {name}": "Elenco: {name}",
+  "Looked at your reminders": "Promemoria consultati",
+  "Searched your reminders for “{query}”": "Cercato “{query}” nei tuoi promemoria"
 }

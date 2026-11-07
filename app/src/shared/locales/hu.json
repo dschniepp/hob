@@ -756,5 +756,11 @@
   "Rename chat": "Csevegés átnevezése",
   "Save as Markdown": "Mentés Markdownként",
   "Unpin": "Kitűzés megszüntetése",
-  "You": "Te"
+  "You": "Te",
+  "Add “{title}” to Reminders on {when}?": "Hozzáadod a(z) „{title}” elemet az Emlékeztetőkhöz ekkorra: {when}?",
+  "Add “{title}” to Reminders?": "Hozzáadod a(z) „{title}” elemet az Emlékeztetőkhöz?",
+  "Added “{title}” to Reminders": "A(z) „{title}” hozzáadva az Emlékeztetőkhöz",
+  "List: {name}": "Lista: {name}",
+  "Looked at your reminders": "Megnézte az emlékeztetőidet",
+  "Searched your reminders for “{query}”": "Keresés az emlékeztetőidben: „{query}”"
 }

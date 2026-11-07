@@ -23,6 +23,7 @@ import { pruneUndo } from './agent/journal'
 import { PythonRuntime, realRuntimeDeps } from './python/runtime'
 import { VisionInstaller } from './vision/install'
 import { macCalMail, setCalMailSource, setMacDeps } from './tools/mac'
+import { setReminderHelper } from './tools/reminders'
 import { Accounts } from './accounts'
 import { VisionServer } from './vision/server'
 import { pickVision, VISION_MODELS, visionFitsGpu, visionGB } from './vision/catalog'
@@ -246,6 +247,9 @@ app.whenReady().then(() => {
       : script.includes('OutgoingMessage') ? 'ok'
       : JSON.stringify({ subject: 'Your flight to Lisbon', from: 'TAP Air', date: '2026-10-20T08:00:00Z', to: ['me@example.com'], content: `Booking ${args[0]}: departs 24 Oct 07:15.` })),
   })
+  if (FAKE) setReminderHelper(async (args) => (args[0] === 'reminders'
+    ? [{ title: 'Call the dentist', list: 'Home', due: '2026-10-22T09:00:00Z' }]
+    : { ...JSON.parse(args[1]), list: 'Home' }))
   setup.onState((s) => { if ((s.phase === 'downloading' && s.chatReady) || s.phase === 'ready') vision.start() })
   // dictation's model too, as soon as chat works, so the mic is ready the first time it's clicked
   // (once: setup reports download progress many times a second; again after a failed try, e.g. offline)

@@ -756,5 +756,11 @@
   "Rename chat": "চ্যাটের নাম বদলান",
   "Save as Markdown": "Markdown হিসেবে সেভ করুন",
   "Unpin": "আনপিন করুন",
-  "You": "আপনি"
+  "You": "আপনি",
+  "Add “{title}” to Reminders on {when}?": "“{title}” {when} এ রিমাইন্ডারে যোগ করবেন?",
+  "Add “{title}” to Reminders?": "“{title}” রিমাইন্ডারে যোগ করবেন?",
+  "Added “{title}” to Reminders": "“{title}” রিমাইন্ডারে যোগ করা হয়েছে",
+  "List: {name}": "তালিকা: {name}",
+  "Looked at your reminders": "আপনার রিমাইন্ডার দেখা হয়েছে",
+  "Searched your reminders for “{query}”": "আপনার রিমাইন্ডারে “{query}” খোঁজা হয়েছে"
 }

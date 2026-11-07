@@ -792,5 +792,11 @@
   "Rename chat": "Přejmenovat chat",
   "Save as Markdown": "Uložit jako Markdown",
   "Unpin": "Odepnout",
-  "You": "Vy"
+  "You": "Vy",
+  "Add “{title}” to Reminders on {when}?": "Přidat „{title}“ do Připomínek na {when}?",
+  "Add “{title}” to Reminders?": "Přidat „{title}“ do Připomínek?",
+  "Added “{title}” to Reminders": "„{title}“ přidáno do Připomínek",
+  "List: {name}": "Seznam: {name}",
+  "Looked at your reminders": "Prohlédnuty vaše připomínky",
+  "Searched your reminders for “{query}”": "V připomínkách hledáno „{query}“"
 }

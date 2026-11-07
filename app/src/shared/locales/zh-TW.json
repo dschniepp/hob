@@ -702,5 +702,11 @@
   "Rename chat": "重新命名聊天",
   "Save as Markdown": "另存為 Markdown",
   "Unpin": "取消釘選",
-  "You": "你"
+  "You": "你",
+  "Add “{title}” to Reminders on {when}?": "將「{title}」加入 {when} 的提醒事項？",
+  "Add “{title}” to Reminders?": "將「{title}」加入提醒事項？",
+  "Added “{title}” to Reminders": "已將「{title}」加入提醒事項",
+  "List: {name}": "列表：{name}",
+  "Looked at your reminders": "查看了你的提醒事項",
+  "Searched your reminders for “{query}”": "在你的提醒事項中搜尋了「{query}」"
 }

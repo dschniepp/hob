@@ -702,5 +702,11 @@
   "Rename chat": "Ubah nama chat",
   "Save as Markdown": "Simpan sebagai Markdown",
   "Unpin": "Lepas sematan",
-  "You": "Kamu"
+  "You": "Kamu",
+  "Add “{title}” to Reminders on {when}?": "Tambahkan “{title}” ke Pengingat pada {when}?",
+  "Add “{title}” to Reminders?": "Tambahkan “{title}” ke Pengingat?",
+  "Added “{title}” to Reminders": "“{title}” ditambahkan ke Pengingat",
+  "List: {name}": "Daftar: {name}",
+  "Looked at your reminders": "Melihat pengingat Anda",
+  "Searched your reminders for “{query}”": "Mencari “{query}” di pengingat Anda"
 }

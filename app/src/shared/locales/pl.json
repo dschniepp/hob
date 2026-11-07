@@ -792,5 +792,11 @@
   "Rename chat": "Zmień nazwę czatu",
   "Save as Markdown": "Zapisz jako Markdown",
   "Unpin": "Odepnij",
-  "You": "Ty"
+  "You": "Ty",
+  "Add “{title}” to Reminders on {when}?": "Dodać „{title}” do Przypomnień na {when}?",
+  "Add “{title}” to Reminders?": "Dodać „{title}” do Przypomnień?",
+  "Added “{title}” to Reminders": "Dodano „{title}” do Przypomnień",
+  "List: {name}": "Lista: {name}",
+  "Looked at your reminders": "Sprawdzono Twoje przypomnienia",
+  "Searched your reminders for “{query}”": "Przeszukano Twoje przypomnienia pod kątem „{query}”"
 }
