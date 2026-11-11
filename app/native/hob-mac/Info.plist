@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>CFBundleIdentifier</key><string>app.hob.mac-helper</string>
+  <key>CFBundleName</key><string>Hob</string>
+  <key>NSCalendarsFullAccessUsageDescription</key><string>Hob reads and adds events in your calendars when you ask it to. Everything stays on this Mac.</string>
+  <key>NSCalendarsUsageDescription</key><string>Hob reads and adds events in your calendars when you ask it to. Everything stays on this Mac.</string>
+  <key>NSRemindersFullAccessUsageDescription</key><string>Hob reads and adds reminders when you ask it to. Everything stays on this Mac.</string>
+  <key>NSRemindersUsageDescription</key><string>Hob reads and adds reminders when you ask it to. Everything stays on this Mac.</string>
+  <key>NSAppleEventsUsageDescription</key><string>Hob uses the Mail app to find and read your email and write drafts when you ask it to. It never sends email itself.</string>
+</dict>
+</plist>

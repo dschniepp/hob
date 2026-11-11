@@ -7,7 +7,7 @@
 //   hob-mac add-event JSON                 → {"title","start","end","calendar"?,"location"?,"notes"?,"allDay"?}
 //   hob-mac reminder-status                → {"status":"granted"|"denied"|"notDetermined"}
 //   hob-mac reminder-auth                  → asks once (the system's own prompt), then the status
-//   hob-mac reminders JSON                → [{"title","list","due"?,"notes"?}]; JSON: {"query"?,"includeCompleted"?}
+//   hob-mac reminders JSON                → [{"title","list","due"?,"notes"?}]; JSON: {"query"?,"includeCompleted"?,"completedSince"?}; completed ones come last with "completed": true, "completedOn"?
 //   hob-mac add-reminder JSON              → {"title","due"?,"list"?,"notes"?}; asks for Reminders access the first time
 //   hob-mac mail-status | mail-auth        → may Hob talk to the Mail app? (mail-auth opens Mail and asks once)
 import AppKit
@@ -132,9 +132,20 @@ case "reminders":
   var found: [EKReminder] = []
   store.fetchReminders(matching: predicate) { r in found = r ?? []; fetched.signal() }
   _ = fetched.wait(timeout: .now() + 60)
-  out(found.filter { r in query.isEmpty || r.title.lowercased().contains(query) || (r.notes ?? "").lowercased().contains(query) }
+  let since = (j["completedSince"] as? String).map { date($0) }
+  let matches = found.filter { r in
+    (query.isEmpty || r.title.lowercased().contains(query) || (r.notes ?? "").lowercased().contains(query))
+      && (since == nil || !r.isCompleted || (r.completionDate ?? .distantPast) >= since!)
+  }
+  // open ones first, soonest due first (undated last); then completed ones, most recently completed first
+  func due(_ r: EKReminder) -> Date { r.dueDateComponents.flatMap { Calendar.current.date(from: $0) } ?? .distantFuture }
+  let open = matches.filter { !$0.isCompleted }.sorted { due($0) < due($1) }
+  let done = matches.filter { $0.isCompleted }.sorted { ($0.completionDate ?? .distantPast) > ($1.completionDate ?? .distantPast) }
+  out((open + done)
     .prefix(200).map { r in
       var o: [String: Any] = ["title": r.title ?? "(no title)", "list": r.calendar.title]
+      o["completed"] = r.isCompleted
+      if let d = r.completionDate { o["completedOn"] = iso.string(from: d) }
       if let n = r.notes, !n.isEmpty { o["notes"] = String(n.prefix(1000)) }
       if let c = r.dueDateComponents, let d = Calendar.current.date(from: c) { o["due"] = iso.string(from: d) }
       return o

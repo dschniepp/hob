@@ -11,6 +11,15 @@ describe('reminders tools', () => {
     expect(r.text).toContain('Pay rent')
     expect(ctx.untrusted).toBe(true)
   })
+  it('marks completed reminders so they can be told apart from open ones', async () => {
+    setReminderHelper(async () => [
+      { title: 'Pay rent', list: 'Home', completed: false },
+      { title: 'Call Anna', list: 'Home', completed: true, completedOn: '2026-10-20T09:00:00Z' },
+    ])
+    const r = await remindersList.run({ includeCompleted: true }, ctx)
+    expect(r.text).toContain('- Pay rent')
+    expect(r.text).toContain('- ✓ Call Anna · completed')
+  })
   it('asks before adding and reports the list it used', async () => {
     setReminderHelper(async (args) => ({ ...JSON.parse(args[1]), list: 'Home' }))
     expect(reminderAdd.action({ title: 'x' } as any, ctx)).toMatchObject({ ask: true })

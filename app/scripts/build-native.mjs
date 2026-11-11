@@ -12,8 +12,14 @@ if (process.platform !== 'darwin') process.exit(0)
 for (const name of helpers) {
   const src = join(root, `native/${name}/main.swift`)
   const out = join(root, `resources/bin/${name}`)
-  if (existsSync(out) && statSync(out).mtimeMs > statSync(src).mtimeMs) continue
+  // a helper that asks for Calendar / Reminders / Mail access carries its own Info.plist with the usage texts;
+  // without one macOS silently refuses to show the prompt
+  const plist = join(root, `native/${name}/Info.plist`)
+  const inputs = existsSync(plist) ? [src, plist] : [src]
+  if (existsSync(out) && statSync(out).mtimeMs > Math.max(...inputs.map((f) => statSync(f).mtimeMs))) continue
   mkdirSync(dirname(out), { recursive: true })
-  execFileSync('xcrun', ['swiftc', '-O', '-target', 'arm64-apple-macos13', src, '-o', out], { stdio: 'inherit' })
+  const embed = existsSync(plist) ? ['-Xlinker', '-sectcreate', '-Xlinker', '__TEXT', '-Xlinker', '__info_plist', '-Xlinker', plist] : []
+  execFileSync('xcrun', ['swiftc', '-O', '-target', 'arm64-apple-macos13', ...embed, src, '-o', out], { stdio: 'inherit' })
+  if (embed.length) execFileSync('codesign', ['--force', '--sign', '-', '--identifier', 'app.hob.mac-helper', out], { stdio: 'inherit' })
   console.log('built', out)
 }

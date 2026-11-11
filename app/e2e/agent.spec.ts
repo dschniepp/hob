@@ -465,6 +465,58 @@ test('Mac: partial access stays unconnected, an access error can be retried, and
   } finally { await app.close() }
 })
 
+test('Mac: Reminders can be allowed on their own, a refusal shows the hint without undoing the connection, and System Settings changes refresh', async () => {
+  test.skip(process.platform !== 'darwin', 'Calendar & Mail is Mac only')
+  const { app, page } = await launch()
+  try {
+    await ready(page)
+    // Calendar and Mail are already allowed, Reminders has not been asked yet
+    await app.evaluate(({ ipcMain, BrowserWindow }) => {
+      let access = { calendar: 'granted', mail: 'granted', reminders: 'notDetermined' }
+      ipcMain.removeHandler('mac:access'); ipcMain.handle('mac:access', () => access)
+      ipcMain.removeHandler('mac:ask')
+      ipcMain.handle('mac:ask', () => {
+        access = { ...access, reminders: 'granted' }
+        for (const w of BrowserWindow.getAllWindows()) w.webContents.send('mac:access', access)
+        return access
+      })
+    })
+    await page.getByTestId('open-settings').click()
+    await page.getByTestId('settings-nav-plugins').click()
+    const connection = page.getByTestId('calendar-mail-connect')
+    await connection.click()
+    const dialog = page.getByTestId('connect-apps')
+    await expect(page.getByRole('heading', { name: 'Email and calendar connected' })).toBeVisible()
+    await expect(dialog).toContainText('Reminders')
+    const allow = page.getByTestId('reminders-allow')
+    await expect(allow).toBeVisible()
+    await allow.click()
+    await expect(allow).toHaveCount(0)
+    await expect(dialog).not.toContainText('Not yet')
+
+    // A refusal explains where to change it, and Calendar and Mail stay connected
+    await app.evaluate(({ ipcMain, BrowserWindow }) => {
+      const access = { calendar: 'granted', mail: 'granted', reminders: 'denied' }
+      ipcMain.removeHandler('mac:access'); ipcMain.handle('mac:access', () => access)
+      for (const w of BrowserWindow.getAllWindows()) w.webContents.send('mac:access', access)
+    })
+    await expect(dialog).toContainText('Not allowed')
+    await expect(dialog).toContainText('Privacy & Security → Reminders')
+    await expect(page.getByTestId('reminders-allow')).toHaveCount(0)
+    await expect(page.getByRole('heading', { name: 'Email and calendar connected' })).toBeVisible()
+    await expect(page.getByTestId('connect-apps-try')).toBeVisible()
+
+    // Allowed in System Settings while Hob is in the background: the hint goes when Hob is back in front
+    await app.evaluate(({ ipcMain }) => {
+      ipcMain.removeHandler('mac:access')
+      ipcMain.handle('mac:access', () => ({ calendar: 'granted', mail: 'granted', reminders: 'granted' }))
+    })
+    await page.evaluate(() => window.dispatchEvent(new Event('focus')))
+    await expect(dialog).not.toContainText('Privacy & Security → Reminders')
+    await expect(dialog).not.toContainText('Not allowed')
+  } finally { await app.close() }
+})
+
 test('Markdown streaming in never shows its ** or ` marks', async () => {
   const { app, page } = await launch()
   await ready(page)
