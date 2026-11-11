@@ -720,5 +720,19 @@
   "Mark as not done": "未完了にする",
   "Deleted “{title}” from Reminders": "「{title}」をリマインダーから削除しました",
   "Delete “{title}” from Reminders?": "「{title}」をリマインダーから削除しますか？",
-  "Change “{title}” in Reminders?": "リマインダーの「{title}」を変更しますか？"
+  "Change “{title}” in Reminders?": "リマインダーの「{title}」を変更しますか？",
+  "Add to “{title}” in Notes?": "メモの「{title}」に追記しますか？",
+  "Add “{title}” to Notes?": "「{title}」をメモに追加しますか？",
+  "Added “{title}” to Notes": "「{title}」をメモに追加しました",
+  "Allow Notes": "メモを許可",
+  "Change “{title}” in Notes?": "メモの「{title}」を変更しますか？",
+  "Changed “{title}” in Notes": "メモの「{title}」を変更しました",
+  "Delete “{title}” from Notes?": "「{title}」をメモから削除しますか？",
+  "Deleted “{title}” from Notes": "「{title}」をメモから削除しました",
+  "Folder: {name}": "フォルダ：{name}",
+  "Looked at your latest notes": "最新のメモを見ました",
+  "Read a note": "メモを読む",
+  "Read “{title}”": "「{title}」を読みました",
+  "Searched your notes for “{query}”": "メモで「{query}」を検索しました",
+  "To use Notes, allow Hob in System Settings → Privacy & Security → Automation → Notes.": "メモを使うには、システム設定 → プライバシーとセキュリティ → オートメーション → メモで Hob を許可してください。"
 }

@@ -720,5 +720,19 @@
   "Mark as not done": "Đánh dấu chưa hoàn thành",
   "Deleted “{title}” from Reminders": "Đã xóa “{title}” khỏi Lời nhắc",
   "Delete “{title}” from Reminders?": "Xóa “{title}” khỏi Lời nhắc?",
-  "Change “{title}” in Reminders?": "Đổi “{title}” trong Lời nhắc?"
+  "Change “{title}” in Reminders?": "Đổi “{title}” trong Lời nhắc?",
+  "Add to “{title}” in Notes?": "Thêm vào “{title}” trong Ghi chú?",
+  "Add “{title}” to Notes?": "Thêm “{title}” vào Ghi chú?",
+  "Added “{title}” to Notes": "Đã thêm “{title}” vào Ghi chú",
+  "Allow Notes": "Cho phép Ghi chú",
+  "Change “{title}” in Notes?": "Đổi “{title}” trong Ghi chú?",
+  "Changed “{title}” in Notes": "Đã đổi “{title}” trong Ghi chú",
+  "Delete “{title}” from Notes?": "Xóa “{title}” khỏi Ghi chú?",
+  "Deleted “{title}” from Notes": "Đã xóa “{title}” khỏi Ghi chú",
+  "Folder: {name}": "Thư mục: {name}",
+  "Looked at your latest notes": "Đã xem các ghi chú mới nhất của bạn",
+  "Read a note": "Đọc một ghi chú",
+  "Read “{title}”": "Đã đọc “{title}”",
+  "Searched your notes for “{query}”": "Đã tìm “{query}” trong ghi chú của bạn",
+  "To use Notes, allow Hob in System Settings → Privacy & Security → Automation → Notes.": "Để dùng Ghi chú, hãy cho phép Hob trong Cài đặt hệ thống → Quyền riêng tư & Bảo mật → Tự động hóa → Ghi chú."
 }

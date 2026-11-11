@@ -720,5 +720,19 @@
   "Mark as not done": "標示為未完成",
   "Deleted “{title}” from Reminders": "已從提醒事項中刪除「{title}」",
   "Delete “{title}” from Reminders?": "從提醒事項中刪除「{title}」？",
-  "Change “{title}” in Reminders?": "在提醒事項中更改「{title}」？"
+  "Change “{title}” in Reminders?": "在提醒事項中更改「{title}」？",
+  "Add to “{title}” in Notes?": "要附加到筆記中的「{title}」嗎？",
+  "Add “{title}” to Notes?": "將「{title}」加入筆記？",
+  "Added “{title}” to Notes": "已將「{title}」加入筆記",
+  "Allow Notes": "允許筆記",
+  "Change “{title}” in Notes?": "在筆記中更改「{title}」？",
+  "Changed “{title}” in Notes": "已在筆記中更改「{title}」",
+  "Delete “{title}” from Notes?": "從筆記中刪除「{title}」？",
+  "Deleted “{title}” from Notes": "已從筆記中刪除「{title}」",
+  "Folder: {name}": "資料夾：{name}",
+  "Looked at your latest notes": "查看了你最新的筆記",
+  "Read a note": "閱讀筆記",
+  "Read “{title}”": "已閱讀「{title}」",
+  "Searched your notes for “{query}”": "已在你的筆記中搜尋「{query}」",
+  "To use Notes, allow Hob in System Settings → Privacy & Security → Automation → Notes.": "若要使用筆記，請在系統設定 → 隱私權與安全性 → 自動化 → 筆記中允許 Hob。"
 }

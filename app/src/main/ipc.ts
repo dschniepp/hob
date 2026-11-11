@@ -16,6 +16,7 @@ import { Approvals } from './agent/approvals'
 import { LiveTurns } from './agent/live'
 import type { Notices } from './notify'
 import { askMacAccess, macAccess } from './tools/mac'
+import { noteIdOf, openNote } from './tools/notes'
 import type { AccountsLike } from './accounts'
 import type { ProviderId } from './accounts/providers'
 import { RunningTurns } from './agent/running'
@@ -358,11 +359,11 @@ export function registerIpc(d: IpcDeps): { openPluginFile(path: string): Promise
     return r.canceled ? null : (r.filePaths[0] ?? null)
   })
   // Calendar & Mail on a Mac: ask nothing until the user chooses to connect, then the system's own prompts
-  let fakeMac = { calendar: 'notDetermined', mail: 'notDetermined', reminders: 'notDetermined' }
+  let fakeMac = { calendar: 'notDetermined', mail: 'notDetermined', reminders: 'notDetermined', notes: 'notDetermined' }
   ipcMain.handle('mac:access', async () => (process.platform !== 'darwin' ? null : d.fake ? fakeMac : macAccess()))
   ipcMain.handle('mac:ask', async () => {
     if (process.platform !== 'darwin') return null
-    const r = d.fake ? (fakeMac = { calendar: 'granted', mail: 'granted', reminders: 'granted' }) : await askMacAccess()
+    const r = d.fake ? (fakeMac = { calendar: 'granted', mail: 'granted', reminders: 'granted', notes: 'granted' }) : await askMacAccess()
     send('mac:access', r)
     return r
   })
@@ -376,6 +377,12 @@ export function registerIpc(d: IpcDeps): { openPluginFile(path: string): Promise
   })
   ipcMain.handle('accounts:cancel', () => d.accounts.cancelSignIn())
   ipcMain.handle('accounts:signOut', () => { d.accounts.signOut(); send('accounts:changed', accountsState()); return accountsState() })
+  // a note link in a reply: only Hob's own links, and only on a Mac
+  ipcMain.handle('mac:openNote', async (_e, link: string) => {
+    if (process.platform !== 'darwin' || d.fake || typeof link !== 'string' || !link.startsWith('hob-note://')) return
+    const id = noteIdOf(link)
+    if (id) await openNote(id)
+  })
   ipcMain.handle('mac:openAccounts', () => { if (process.platform === 'darwin') void shell.openExternal('x-apple.systempreferences:com.apple.Internet-Accounts-Settings.extension') })
   ipcMain.handle('speech:mic', () => (process.platform === 'darwin' && !d.fake
     ? micAccess(systemPreferences.getMediaAccessStatus('microphone'), () => systemPreferences.askForMediaAccess('microphone'))

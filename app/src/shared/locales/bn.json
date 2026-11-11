@@ -774,5 +774,19 @@
   "Mark as not done": "অসম্পন্ন চিহ্নিত করুন",
   "Deleted “{title}” from Reminders": "রিমাইন্ডার থেকে “{title}” মুছে ফেলা হয়েছে",
   "Delete “{title}” from Reminders?": "রিমাইন্ডার থেকে “{title}” মুছবেন?",
-  "Change “{title}” in Reminders?": "রিমাইন্ডারে “{title}” পরিবর্তন করবেন?"
+  "Change “{title}” in Reminders?": "রিমাইন্ডারে “{title}” পরিবর্তন করবেন?",
+  "Add to “{title}” in Notes?": "নোটে “{title}”-এ যোগ করবেন?",
+  "Add “{title}” to Notes?": "“{title}” নোটে যোগ করবেন?",
+  "Added “{title}” to Notes": "“{title}” নোটে যোগ করা হয়েছে",
+  "Allow Notes": "নোটের অনুমতি দিন",
+  "Change “{title}” in Notes?": "নোটে “{title}” পরিবর্তন করবেন?",
+  "Changed “{title}” in Notes": "নোটে “{title}” পরিবর্তন করা হয়েছে",
+  "Delete “{title}” from Notes?": "নোট থেকে “{title}” মুছবেন?",
+  "Deleted “{title}” from Notes": "নোট থেকে “{title}” মুছে ফেলা হয়েছে",
+  "Folder: {name}": "ফোল্ডার: {name}",
+  "Looked at your latest notes": "আপনার সর্বশেষ নোট দেখেছে",
+  "Read a note": "একটি নোট পড়ুন",
+  "Read “{title}”": "“{title}” পড়া হয়েছে",
+  "Searched your notes for “{query}”": "আপনার নোটে “{query}” খোঁজা হয়েছে",
+  "To use Notes, allow Hob in System Settings → Privacy & Security → Automation → Notes.": "নোট ব্যবহার করতে সিস্টেম সেটিংস → গোপনীয়তা ও নিরাপত্তা → অটোমেশন → নোটে Hob-কে অনুমতি দিন।"
 }

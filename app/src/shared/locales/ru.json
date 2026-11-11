@@ -810,5 +810,19 @@
   "Mark as not done": "Отметить как невыполненное",
   "Deleted “{title}” from Reminders": "«{title}» удалено из Напоминаний",
   "Delete “{title}” from Reminders?": "Удалить «{title}» из Напоминаний?",
-  "Change “{title}” in Reminders?": "Изменить «{title}» в Напоминаниях?"
+  "Change “{title}” in Reminders?": "Изменить «{title}» в Напоминаниях?",
+  "Add to “{title}” in Notes?": "Добавить к «{title}» в Заметках?",
+  "Add “{title}” to Notes?": "Добавить «{title}» в Заметки?",
+  "Added “{title}” to Notes": "«{title}» добавлено в Заметки",
+  "Allow Notes": "Разрешить Заметки",
+  "Change “{title}” in Notes?": "Изменить «{title}» в Заметках?",
+  "Changed “{title}” in Notes": "«{title}» изменено в Заметках",
+  "Delete “{title}” from Notes?": "Удалить «{title}» из Заметок?",
+  "Deleted “{title}” from Notes": "«{title}» удалено из Заметок",
+  "Folder: {name}": "Папка: {name}",
+  "Looked at your latest notes": "Просмотрены последние заметки",
+  "Read a note": "Прочитать заметку",
+  "Read “{title}”": "Прочитано «{title}»",
+  "Searched your notes for “{query}”": "Поиск в заметках: «{query}»",
+  "To use Notes, allow Hob in System Settings → Privacy & Security → Automation → Notes.": "Чтобы использовать Заметки, разрешите Hob в Системных настройках → Конфиденциальность и безопасность → Автоматизация → Заметки."
 }

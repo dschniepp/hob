@@ -774,5 +774,19 @@
   "Mark as not done": "Tamamlanmadı olarak işaretle",
   "Deleted “{title}” from Reminders": "“{title}” Anımsatıcılar’dan silindi",
   "Delete “{title}” from Reminders?": "“{title}” Anımsatıcılar’dan silinsin mi?",
-  "Change “{title}” in Reminders?": "“{title}” Anımsatıcılar’da değiştirilsin mi?"
+  "Change “{title}” in Reminders?": "“{title}” Anımsatıcılar’da değiştirilsin mi?",
+  "Add to “{title}” in Notes?": "Notlar’da “{title}” notuna eklensin mi?",
+  "Add “{title}” to Notes?": "“{title}” Notlar’a eklensin mi?",
+  "Added “{title}” to Notes": "“{title}” Notlar’a eklendi",
+  "Allow Notes": "Notlar’a izin ver",
+  "Change “{title}” in Notes?": "“{title}” Notlar’da değiştirilsin mi?",
+  "Changed “{title}” in Notes": "“{title}” Notlar’da değiştirildi",
+  "Delete “{title}” from Notes?": "“{title}” Notlar’dan silinsin mi?",
+  "Deleted “{title}” from Notes": "“{title}” Notlar’dan silindi",
+  "Folder: {name}": "Klasör: {name}",
+  "Looked at your latest notes": "Son notlarınıza baktı",
+  "Read a note": "Bir notu oku",
+  "Read “{title}”": "“{title}” okundu",
+  "Searched your notes for “{query}”": "Notlarınızda “{query}” arandı",
+  "To use Notes, allow Hob in System Settings → Privacy & Security → Automation → Notes.": "Notlar’ı kullanmak için Sistem Ayarları → Gizlilik ve Güvenlik → Otomasyon → Notlar bölümünde Hob’a izin verin."
 }

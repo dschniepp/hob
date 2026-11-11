@@ -720,5 +720,19 @@
   "Mark as not done": "ทำเครื่องหมายว่ายังไม่เสร็จ",
   "Deleted “{title}” from Reminders": "ลบ “{title}” ออกจากการเตือนความจำแล้ว",
   "Delete “{title}” from Reminders?": "ลบ “{title}” ออกจากการเตือนความจำไหม",
-  "Change “{title}” in Reminders?": "เปลี่ยน “{title}” ในการเตือนความจำไหม"
+  "Change “{title}” in Reminders?": "เปลี่ยน “{title}” ในการเตือนความจำไหม",
+  "Add to “{title}” in Notes?": "เพิ่มลงใน “{title}” ในโน้ตไหม",
+  "Add “{title}” to Notes?": "เพิ่ม “{title}” ลงในโน้ตไหม",
+  "Added “{title}” to Notes": "เพิ่ม “{title}” ลงในโน้ตแล้ว",
+  "Allow Notes": "อนุญาตโน้ต",
+  "Change “{title}” in Notes?": "เปลี่ยน “{title}” ในโน้ตไหม",
+  "Changed “{title}” in Notes": "เปลี่ยน “{title}” ในโน้ตแล้ว",
+  "Delete “{title}” from Notes?": "ลบ “{title}” ออกจากโน้ตไหม",
+  "Deleted “{title}” from Notes": "ลบ “{title}” ออกจากโน้ตแล้ว",
+  "Folder: {name}": "โฟลเดอร์: {name}",
+  "Looked at your latest notes": "ดูโน้ตล่าสุดของคุณแล้ว",
+  "Read a note": "อ่านโน้ต",
+  "Read “{title}”": "อ่าน “{title}” แล้ว",
+  "Searched your notes for “{query}”": "ค้นหา “{query}” ในโน้ตของคุณแล้ว",
+  "To use Notes, allow Hob in System Settings → Privacy & Security → Automation → Notes.": "หากต้องการใช้โน้ต ให้อนุญาต Hob ในการตั้งค่าระบบ → ความเป็นส่วนตัวและความปลอดภัย → ระบบอัตโนมัติ → โน้ต"
 }

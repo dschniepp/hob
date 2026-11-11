@@ -810,5 +810,19 @@
   "Mark as not done": "Oznacz jako nieukończone",
   "Deleted “{title}” from Reminders": "Usunięto „{title}” z Przypomnień",
   "Delete “{title}” from Reminders?": "Usunąć „{title}” z Przypomnień?",
-  "Change “{title}” in Reminders?": "Zmienić „{title}” w Przypomnieniach?"
+  "Change “{title}” in Reminders?": "Zmienić „{title}” w Przypomnieniach?",
+  "Add to “{title}” in Notes?": "Dodać do „{title}” w Notatkach?",
+  "Add “{title}” to Notes?": "Dodać „{title}” do Notatek?",
+  "Added “{title}” to Notes": "Dodano „{title}” do Notatek",
+  "Allow Notes": "Zezwól na Notatki",
+  "Change “{title}” in Notes?": "Zmienić „{title}” w Notatkach?",
+  "Changed “{title}” in Notes": "Zmieniono „{title}” w Notatkach",
+  "Delete “{title}” from Notes?": "Usunąć „{title}” z Notatek?",
+  "Deleted “{title}” from Notes": "Usunięto „{title}” z Notatek",
+  "Folder: {name}": "Folder: {name}",
+  "Looked at your latest notes": "Sprawdzono najnowsze notatki",
+  "Read a note": "Przeczytaj notatkę",
+  "Read “{title}”": "Przeczytano „{title}”",
+  "Searched your notes for “{query}”": "Przeszukano notatki: „{query}”",
+  "To use Notes, allow Hob in System Settings → Privacy & Security → Automation → Notes.": "Aby używać Notatek, zezwól Hobowi w Ustawieniach systemowych → Prywatność i ochrona → Automatyzacja → Notatki."
 }

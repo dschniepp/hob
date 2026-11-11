@@ -774,5 +774,19 @@
   "Mark as not done": "Επισήμανση ως μη ολοκληρωμένο",
   "Deleted “{title}” from Reminders": "Το «{title}» διαγράφηκε από τις Υπενθυμίσεις",
   "Delete “{title}” from Reminders?": "Διαγραφή του «{title}» από τις Υπενθυμίσεις;",
-  "Change “{title}” in Reminders?": "Αλλαγή του «{title}» στις Υπενθυμίσεις;"
+  "Change “{title}” in Reminders?": "Αλλαγή του «{title}» στις Υπενθυμίσεις;",
+  "Add to “{title}” in Notes?": "Προσθήκη στο «{title}» στις Σημειώσεις;",
+  "Add “{title}” to Notes?": "Προσθήκη του «{title}» στις Σημειώσεις;",
+  "Added “{title}” to Notes": "Το «{title}» προστέθηκε στις Σημειώσεις",
+  "Allow Notes": "Να επιτρέπονται οι Σημειώσεις",
+  "Change “{title}” in Notes?": "Αλλαγή του «{title}» στις Σημειώσεις;",
+  "Changed “{title}” in Notes": "Το «{title}» άλλαξε στις Σημειώσεις",
+  "Delete “{title}” from Notes?": "Διαγραφή του «{title}» από τις Σημειώσεις;",
+  "Deleted “{title}” from Notes": "Το «{title}» διαγράφηκε από τις Σημειώσεις",
+  "Folder: {name}": "Φάκελος: {name}",
+  "Looked at your latest notes": "Είδε τις πιο πρόσφατες σημειώσεις σας",
+  "Read a note": "Ανάγνωση σημείωσης",
+  "Read “{title}”": "Ανάγνωση «{title}»",
+  "Searched your notes for “{query}”": "Αναζήτηση στις σημειώσεις σας για «{query}»",
+  "To use Notes, allow Hob in System Settings → Privacy & Security → Automation → Notes.": "Για να χρησιμοποιήσετε τις Σημειώσεις, επιτρέψτε το Hob στις Ρυθμίσεις συστήματος → Απόρρητο και ασφάλεια → Αυτοματισμός → Σημειώσεις."
 }

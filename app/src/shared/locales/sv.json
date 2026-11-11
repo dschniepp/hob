@@ -774,5 +774,19 @@
   "Mark as not done": "Markera som ej klar",
   "Deleted “{title}” from Reminders": "”{title}” borttagen från Påminnelser",
   "Delete “{title}” from Reminders?": "Ta bort ”{title}” från Påminnelser?",
-  "Change “{title}” in Reminders?": "Ändra ”{title}” i Påminnelser?"
+  "Change “{title}” in Reminders?": "Ändra ”{title}” i Påminnelser?",
+  "Add to “{title}” in Notes?": "Lägga till i ”{title}” i Anteckningar?",
+  "Add “{title}” to Notes?": "Lägga till ”{title}” i Anteckningar?",
+  "Added “{title}” to Notes": "”{title}” tillagd i Anteckningar",
+  "Allow Notes": "Tillåt Anteckningar",
+  "Change “{title}” in Notes?": "Ändra ”{title}” i Anteckningar?",
+  "Changed “{title}” in Notes": "”{title}” ändrad i Anteckningar",
+  "Delete “{title}” from Notes?": "Ta bort ”{title}” från Anteckningar?",
+  "Deleted “{title}” from Notes": "”{title}” borttagen från Anteckningar",
+  "Folder: {name}": "Mapp: {name}",
+  "Looked at your latest notes": "Tittade på dina senaste anteckningar",
+  "Read a note": "Läs en anteckning",
+  "Read “{title}”": "Läste ”{title}”",
+  "Searched your notes for “{query}”": "Sökte i dina anteckningar efter ”{query}”",
+  "To use Notes, allow Hob in System Settings → Privacy & Security → Automation → Notes.": "För att använda Anteckningar, tillåt Hob i Systeminställningar → Integritet och säkerhet → Automatisering → Anteckningar."
 }

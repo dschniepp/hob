@@ -774,5 +774,19 @@
   "Mark as not done": "अधूरा चिह्नित करें",
   "Deleted “{title}” from Reminders": "रिमाइंडर से “{title}” हटाया गया",
   "Delete “{title}” from Reminders?": "रिमाइंडर से “{title}” हटाएँ?",
-  "Change “{title}” in Reminders?": "रिमाइंडर में “{title}” बदलें?"
+  "Change “{title}” in Reminders?": "रिमाइंडर में “{title}” बदलें?",
+  "Add to “{title}” in Notes?": "नोट्स में “{title}” में जोड़ें?",
+  "Add “{title}” to Notes?": "“{title}” को नोट्स में जोड़ें?",
+  "Added “{title}” to Notes": "“{title}” नोट्स में जोड़ा गया",
+  "Allow Notes": "नोट्स की अनुमति दें",
+  "Change “{title}” in Notes?": "नोट्स में “{title}” बदलें?",
+  "Changed “{title}” in Notes": "नोट्स में “{title}” बदला गया",
+  "Delete “{title}” from Notes?": "नोट्स से “{title}” हटाएँ?",
+  "Deleted “{title}” from Notes": "नोट्स से “{title}” हटाया गया",
+  "Folder: {name}": "फ़ोल्डर: {name}",
+  "Looked at your latest notes": "आपके सबसे नए नोट्स देखे",
+  "Read a note": "एक नोट पढ़ें",
+  "Read “{title}”": "“{title}” पढ़ा गया",
+  "Searched your notes for “{query}”": "आपके नोट्स में “{query}” खोजा",
+  "To use Notes, allow Hob in System Settings → Privacy & Security → Automation → Notes.": "नोट्स का उपयोग करने के लिए सिस्टम सेटिंग्स → गोपनीयता और सुरक्षा → ऑटोमेशन → नोट्स में Hob को अनुमति दें।"
 }

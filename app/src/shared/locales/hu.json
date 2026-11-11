@@ -774,5 +774,19 @@
   "Mark as not done": "Megjelölés nem késznek",
   "Deleted “{title}” from Reminders": "A(z) „{title}” törölve az Emlékeztetőkből",
   "Delete “{title}” from Reminders?": "Törlöd a(z) „{title}” elemet az Emlékeztetőkből?",
-  "Change “{title}” in Reminders?": "Módosítod a(z) „{title}” elemet az Emlékeztetőkben?"
+  "Change “{title}” in Reminders?": "Módosítod a(z) „{title}” elemet az Emlékeztetőkben?",
+  "Add to “{title}” in Notes?": "Hozzáfűzöl a(z) „{title}” jegyzethez?",
+  "Add “{title}” to Notes?": "Hozzáadod a(z) „{title}” elemet a Jegyzetekhez?",
+  "Added “{title}” to Notes": "A(z) „{title}” hozzáadva a Jegyzetekhez",
+  "Allow Notes": "Jegyzetek engedélyezése",
+  "Change “{title}” in Notes?": "Módosítod a(z) „{title}” jegyzetet?",
+  "Changed “{title}” in Notes": "A(z) „{title}” módosítva a Jegyzetekben",
+  "Delete “{title}” from Notes?": "Törlöd a(z) „{title}” jegyzetet a Jegyzetekből?",
+  "Deleted “{title}” from Notes": "A(z) „{title}” törölve a Jegyzetekből",
+  "Folder: {name}": "Mappa: {name}",
+  "Looked at your latest notes": "Megnézte a legutóbbi jegyzeteidet",
+  "Read a note": "Jegyzet elolvasása",
+  "Read “{title}”": "Elolvasva: „{title}”",
+  "Searched your notes for “{query}”": "Keresés a jegyzeteidben: „{query}”",
+  "To use Notes, allow Hob in System Settings → Privacy & Security → Automation → Notes.": "A Jegyzetek használatához engedélyezd a Hobot: Rendszerbeállítások → Adatvédelem és biztonság → Automatizálás → Jegyzetek."
 }

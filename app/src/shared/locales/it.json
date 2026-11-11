@@ -792,5 +792,19 @@
   "Mark as not done": "Segna come non completato",
   "Deleted “{title}” from Reminders": "“{title}” eliminato da Promemoria",
   "Delete “{title}” from Reminders?": "Eliminare “{title}” da Promemoria?",
-  "Change “{title}” in Reminders?": "Modificare “{title}” in Promemoria?"
+  "Change “{title}” in Reminders?": "Modificare “{title}” in Promemoria?",
+  "Add to “{title}” in Notes?": "Aggiungere a “{title}” in Note?",
+  "Add “{title}” to Notes?": "Aggiungere “{title}” a Note?",
+  "Added “{title}” to Notes": "“{title}” aggiunta a Note",
+  "Allow Notes": "Consenti Note",
+  "Change “{title}” in Notes?": "Modificare “{title}” in Note?",
+  "Changed “{title}” in Notes": "“{title}” modificata in Note",
+  "Delete “{title}” from Notes?": "Eliminare “{title}” da Note?",
+  "Deleted “{title}” from Notes": "“{title}” eliminata da Note",
+  "Folder: {name}": "Cartella: {name}",
+  "Looked at your latest notes": "Ha guardato le ultime note",
+  "Read a note": "Leggere una nota",
+  "Read “{title}”": "Letta “{title}”",
+  "Searched your notes for “{query}”": "Cercato “{query}” nelle tue note",
+  "To use Notes, allow Hob in System Settings → Privacy & Security → Automation → Notes.": "Per usare Note, consenti a Hob in Impostazioni di Sistema → Privacy e sicurezza → Automazione → Note."
 }

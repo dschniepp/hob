@@ -774,5 +774,19 @@
   "Mark as not done": "Markahang hindi pa tapos",
   "Deleted “{title}” from Reminders": "Binura ang “{title}” sa Mga Paalala",
   "Delete “{title}” from Reminders?": "Burahin ang “{title}” sa Mga Paalala?",
-  "Change “{title}” in Reminders?": "Baguhin ang “{title}” sa Mga Paalala?"
+  "Change “{title}” in Reminders?": "Baguhin ang “{title}” sa Mga Paalala?",
+  "Add to “{title}” in Notes?": "Idagdag sa “{title}” sa Notes?",
+  "Add “{title}” to Notes?": "Idagdag ang “{title}” sa Notes?",
+  "Added “{title}” to Notes": "Naidagdag ang “{title}” sa Notes",
+  "Allow Notes": "Payagan ang Notes",
+  "Change “{title}” in Notes?": "Baguhin ang “{title}” sa Notes?",
+  "Changed “{title}” in Notes": "Binago ang “{title}” sa Notes",
+  "Delete “{title}” from Notes?": "Burahin ang “{title}” sa Notes?",
+  "Deleted “{title}” from Notes": "Binura ang “{title}” sa Notes",
+  "Folder: {name}": "Folder: {name}",
+  "Looked at your latest notes": "Tiningnan ang pinakabago mong mga note",
+  "Read a note": "Magbasa ng note",
+  "Read “{title}”": "Binasa ang “{title}”",
+  "Searched your notes for “{query}”": "Hinanap ang “{query}” sa iyong mga note",
+  "To use Notes, allow Hob in System Settings → Privacy & Security → Automation → Notes.": "Para magamit ang Notes, payagan ang Hob sa System Settings → Privacy & Security → Automation → Notes."
 }

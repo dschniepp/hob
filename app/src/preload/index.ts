@@ -40,7 +40,7 @@ const api: HobApi = {
     onOpen: (cb) => listen<[string]>('chat:open', cb),
   },
   approval: { answer: invoke('approval:answer') },
-  mac: { access: invoke('mac:access'), ask: invoke('mac:ask'), openAccounts: invoke('mac:openAccounts'), onChanged: (cb) => listen<[MacAccess | null]>('mac:access', cb) },
+  mac: { access: invoke('mac:access'), ask: invoke('mac:ask'), openAccounts: invoke('mac:openAccounts'), openNote: invoke('mac:openNote'), onChanged: (cb) => listen<[MacAccess | null]>('mac:access', cb) },
   accounts: { get: invoke('accounts:get'), signIn: invoke('accounts:signIn'), cancel: invoke('accounts:cancel'), signOut: invoke('accounts:signOut'), onChanged: (cb) => listen<[AccountsState]>('accounts:changed', cb) },
   vision: { getState: invoke('vision:getState'), onState: (cb) => listen<[VisionState]>('vision:state', cb), retry: invoke('vision:retry') },
   task: { undo: invoke('task:undo') },

@@ -12,6 +12,7 @@
 //   hob-mac update-reminder JSON           → {"id", …the same fields, "completed"?}; "" clears due/notes/url, repeat "none" stops repeating
 //   hob-mac delete-reminder JSON           → {"id"}
 //   hob-mac mail-status | mail-auth        → may Hob talk to the Mail app? (mail-auth opens Mail and asks once)
+//   hob-mac notes-status | notes-auth      → the same for the Notes app
 import AppKit
 import EventKit
 import Foundation
@@ -245,9 +246,9 @@ case "delete-reminder":
   let d = describe(r)
   do { try store.remove(r, commit: true) } catch { fail("Couldn't delete the reminder: \(error.localizedDescription)") }
   out(d)
-case "mail-status", "mail-auth":
-  let ask = args.first == "mail-auth"
-  let bundle = "com.apple.mail"
+case "mail-status", "mail-auth", "notes-status", "notes-auth":
+  let ask = args.first?.hasSuffix("-auth") ?? false
+  let bundle = args.first!.hasPrefix("notes") ? "com.apple.Notes" : "com.apple.mail"
   if ask, NSRunningApplication.runningApplications(withBundleIdentifier: bundle).isEmpty, let url = NSWorkspace.shared.urlForApplication(withBundleIdentifier: bundle) {
     let started = DispatchSemaphore(value: 0)
     let cfg = NSWorkspace.OpenConfiguration(); cfg.activates = false
@@ -262,5 +263,5 @@ case "mail-status", "mail-auth":
   AEDisposeDesc(&target)
   out(["status": r == noErr ? "granted" : r == OSStatus(errAEEventNotPermitted) ? "denied" : r == OSStatus(procNotFound) ? "notRunning" : "notDetermined"])
 default:
-  fail("usage: hob-mac calendar-status | calendar-auth | calendars | events FROM TO [QUERY] | add-event JSON | reminders JSON | add-reminder JSON | reminder-status | reminder-auth | mail-status | mail-auth")
+  fail("usage: hob-mac calendar-status | calendar-auth | calendars | events FROM TO [QUERY] | add-event JSON | reminders JSON | add-reminder JSON | reminder-status | reminder-auth | mail-status | mail-auth | notes-status | notes-auth")
 }

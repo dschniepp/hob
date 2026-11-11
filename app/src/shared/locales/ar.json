@@ -846,5 +846,19 @@
   "Mark as not done": "تحديد كغير مكتمل",
   "Deleted “{title}” from Reminders": "تم حذف «{title}» من التذكيرات",
   "Delete “{title}” from Reminders?": "حذف «{title}» من التذكيرات؟",
-  "Change “{title}” in Reminders?": "تعديل «{title}» في التذكيرات؟"
+  "Change “{title}” in Reminders?": "تعديل «{title}» في التذكيرات؟",
+  "Add to “{title}” in Notes?": "الإضافة إلى «{title}» في الملاحظات؟",
+  "Add “{title}” to Notes?": "إضافة «{title}» إلى الملاحظات؟",
+  "Added “{title}” to Notes": "تمت إضافة «{title}» إلى الملاحظات",
+  "Allow Notes": "السماح بالملاحظات",
+  "Change “{title}” in Notes?": "تعديل «{title}» في الملاحظات؟",
+  "Changed “{title}” in Notes": "تم تعديل «{title}» في الملاحظات",
+  "Delete “{title}” from Notes?": "حذف «{title}» من الملاحظات؟",
+  "Deleted “{title}” from Notes": "تم حذف «{title}» من الملاحظات",
+  "Folder: {name}": "المجلد: {name}",
+  "Looked at your latest notes": "نظر إلى أحدث ملاحظاتك",
+  "Read a note": "قراءة ملاحظة",
+  "Read “{title}”": "قراءة «{title}»",
+  "Searched your notes for “{query}”": "بحث في ملاحظاتك عن «{query}»",
+  "To use Notes, allow Hob in System Settings → Privacy & Security → Automation → Notes.": "لاستخدام الملاحظات، اسمح لـ Hob في إعدادات النظام ← الخصوصية والأمان ← الأتمتة ← الملاحظات."
 }

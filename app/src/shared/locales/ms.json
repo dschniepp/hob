@@ -720,5 +720,19 @@
   "Mark as not done": "Tandakan belum selesai",
   "Deleted “{title}” from Reminders": "“{title}” dipadam daripada Peringatan",
   "Delete “{title}” from Reminders?": "Padam “{title}” daripada Peringatan?",
-  "Change “{title}” in Reminders?": "Ubah “{title}” dalam Peringatan?"
+  "Change “{title}” in Reminders?": "Ubah “{title}” dalam Peringatan?",
+  "Add to “{title}” in Notes?": "Tambah pada “{title}” dalam Nota?",
+  "Add “{title}” to Notes?": "Tambah “{title}” ke Nota?",
+  "Added “{title}” to Notes": "“{title}” ditambah ke Nota",
+  "Allow Notes": "Benarkan Nota",
+  "Change “{title}” in Notes?": "Ubah “{title}” dalam Nota?",
+  "Changed “{title}” in Notes": "“{title}” diubah dalam Nota",
+  "Delete “{title}” from Notes?": "Padam “{title}” daripada Nota?",
+  "Deleted “{title}” from Notes": "“{title}” dipadam daripada Nota",
+  "Folder: {name}": "Folder: {name}",
+  "Looked at your latest notes": "Melihat nota terkini anda",
+  "Read a note": "Baca nota",
+  "Read “{title}”": "“{title}” dibaca",
+  "Searched your notes for “{query}”": "Mencari “{query}” dalam nota anda",
+  "To use Notes, allow Hob in System Settings → Privacy & Security → Automation → Notes.": "Untuk menggunakan Nota, benarkan Hob dalam Tetapan Sistem → Privasi & Keselamatan → Automasi → Nota."
 }

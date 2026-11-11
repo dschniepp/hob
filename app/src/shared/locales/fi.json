@@ -774,5 +774,19 @@
   "Mark as not done": "Merkitse tekemättömäksi",
   "Deleted “{title}” from Reminders": "”{title}” poistettu Muistutuksista",
   "Delete “{title}” from Reminders?": "Poistetaanko ”{title}” Muistutuksista?",
-  "Change “{title}” in Reminders?": "Muutetaanko ”{title}” Muistutuksissa?"
+  "Change “{title}” in Reminders?": "Muutetaanko ”{title}” Muistutuksissa?",
+  "Add to “{title}” in Notes?": "Lisätäänkö kohtaan ”{title}” Muistiinpanoissa?",
+  "Add “{title}” to Notes?": "Lisätäänkö ”{title}” Muistiinpanoihin?",
+  "Added “{title}” to Notes": "”{title}” lisätty Muistiinpanoihin",
+  "Allow Notes": "Salli Muistiinpanot",
+  "Change “{title}” in Notes?": "Muutetaanko ”{title}” Muistiinpanoissa?",
+  "Changed “{title}” in Notes": "”{title}” muutettu Muistiinpanoissa",
+  "Delete “{title}” from Notes?": "Poistetaanko ”{title}” Muistiinpanoista?",
+  "Deleted “{title}” from Notes": "”{title}” poistettu Muistiinpanoista",
+  "Folder: {name}": "Kansio: {name}",
+  "Looked at your latest notes": "Katsottiin uusimpia muistiinpanojasi",
+  "Read a note": "Lue muistiinpano",
+  "Read “{title}”": "Luettu ”{title}”",
+  "Searched your notes for “{query}”": "Haettiin muistiinpanoistasi ”{query}”",
+  "To use Notes, allow Hob in System Settings → Privacy & Security → Automation → Notes.": "Jos haluat käyttää Muistiinpanoja, salli Hob kohdassa Järjestelmäasetukset → Tietosuoja ja suojaus → Automaatio → Muistiinpanot."
 }

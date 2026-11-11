@@ -774,5 +774,19 @@
   "Mark as not done": "Als nicht erledigt markieren",
   "Deleted “{title}” from Reminders": "„{title}“ aus Erinnerungen gelöscht",
   "Delete “{title}” from Reminders?": "„{title}“ aus Erinnerungen löschen?",
-  "Change “{title}” in Reminders?": "„{title}“ in Erinnerungen ändern?"
+  "Change “{title}” in Reminders?": "„{title}“ in Erinnerungen ändern?",
+  "Add to “{title}” in Notes?": "Zu „{title}“ in Notizen hinzufügen?",
+  "Add “{title}” to Notes?": "„{title}“ zu Notizen hinzufügen?",
+  "Added “{title}” to Notes": "„{title}“ zu Notizen hinzugefügt",
+  "Allow Notes": "Notizen erlauben",
+  "Change “{title}” in Notes?": "„{title}“ in Notizen ändern?",
+  "Changed “{title}” in Notes": "„{title}“ in Notizen geändert",
+  "Delete “{title}” from Notes?": "„{title}“ aus Notizen löschen?",
+  "Deleted “{title}” from Notes": "„{title}“ aus Notizen gelöscht",
+  "Folder: {name}": "Ordner: {name}",
+  "Looked at your latest notes": "Neueste Notizen angesehen",
+  "Read a note": "Eine Notiz lesen",
+  "Read “{title}”": "„{title}“ gelesen",
+  "Searched your notes for “{query}”": "Notizen nach „{query}“ durchsucht",
+  "To use Notes, allow Hob in System Settings → Privacy & Security → Automation → Notes.": "Um Notizen zu nutzen, erlaube Hob in Systemeinstellungen → Datenschutz & Sicherheit → Automation → Notizen."
 }

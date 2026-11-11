@@ -774,5 +774,19 @@
   "Mark as not done": "Markeren als niet voltooid",
   "Deleted “{title}” from Reminders": "“{title}” verwijderd uit Herinneringen",
   "Delete “{title}” from Reminders?": "“{title}” verwijderen uit Herinneringen?",
-  "Change “{title}” in Reminders?": "“{title}” wijzigen in Herinneringen?"
+  "Change “{title}” in Reminders?": "“{title}” wijzigen in Herinneringen?",
+  "Add to “{title}” in Notes?": "Toevoegen aan “{title}” in Notities?",
+  "Add “{title}” to Notes?": "“{title}” toevoegen aan Notities?",
+  "Added “{title}” to Notes": "“{title}” toegevoegd aan Notities",
+  "Allow Notes": "Notities toestaan",
+  "Change “{title}” in Notes?": "“{title}” wijzigen in Notities?",
+  "Changed “{title}” in Notes": "“{title}” gewijzigd in Notities",
+  "Delete “{title}” from Notes?": "“{title}” verwijderen uit Notities?",
+  "Deleted “{title}” from Notes": "“{title}” verwijderd uit Notities",
+  "Folder: {name}": "Map: {name}",
+  "Looked at your latest notes": "Je nieuwste notities bekeken",
+  "Read a note": "Een notitie lezen",
+  "Read “{title}”": "“{title}” gelezen",
+  "Searched your notes for “{query}”": "Je notities doorzocht op “{query}”",
+  "To use Notes, allow Hob in System Settings → Privacy & Security → Automation → Notes.": "Om Notities te gebruiken, sta Hob toe in Systeeminstellingen → Privacy en beveiliging → Automatisering → Notities."
 }

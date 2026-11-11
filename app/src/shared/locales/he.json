@@ -792,5 +792,19 @@
   "Mark as not done": "סמן כלא הושלם",
   "Deleted “{title}” from Reminders": "“{title}” נמחק מהתזכורות",
   "Delete “{title}” from Reminders?": "למחוק את “{title}” מהתזכורות?",
-  "Change “{title}” in Reminders?": "לשנות את “{title}” בתזכורות?"
+  "Change “{title}” in Reminders?": "לשנות את “{title}” בתזכורות?",
+  "Add to “{title}” in Notes?": "להוסיף ל“{title}” בפתקים?",
+  "Add “{title}” to Notes?": "להוסיף את “{title}” לפתקים?",
+  "Added “{title}” to Notes": "“{title}” נוסף לפתקים",
+  "Allow Notes": "אפשר גישה לפתקים",
+  "Change “{title}” in Notes?": "לשנות את “{title}” בפתקים?",
+  "Changed “{title}” in Notes": "“{title}” שונה בפתקים",
+  "Delete “{title}” from Notes?": "למחוק את “{title}” מהפתקים?",
+  "Deleted “{title}” from Notes": "“{title}” נמחק מהפתקים",
+  "Folder: {name}": "תיקייה: {name}",
+  "Looked at your latest notes": "הסתכל בפתקים האחרונים שלך",
+  "Read a note": "קריאת פתק",
+  "Read “{title}”": "“{title}” נקרא",
+  "Searched your notes for “{query}”": "חיפש “{query}” בפתקים שלך",
+  "To use Notes, allow Hob in System Settings → Privacy & Security → Automation → Notes.": "כדי להשתמש בפתקים, אפשר ל-Hob בהגדרות המערכת ← פרטיות ואבטחה ← אוטומציה ← פתקים."
 }

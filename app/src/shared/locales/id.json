@@ -720,5 +720,19 @@
   "Mark as not done": "Tandai belum selesai",
   "Deleted “{title}” from Reminders": "“{title}” dihapus dari Pengingat",
   "Delete “{title}” from Reminders?": "Hapus “{title}” dari Pengingat?",
-  "Change “{title}” in Reminders?": "Ubah “{title}” di Pengingat?"
+  "Change “{title}” in Reminders?": "Ubah “{title}” di Pengingat?",
+  "Add to “{title}” in Notes?": "Tambahkan ke “{title}” di Catatan?",
+  "Add “{title}” to Notes?": "Tambahkan “{title}” ke Catatan?",
+  "Added “{title}” to Notes": "“{title}” ditambahkan ke Catatan",
+  "Allow Notes": "Izinkan Catatan",
+  "Change “{title}” in Notes?": "Ubah “{title}” di Catatan?",
+  "Changed “{title}” in Notes": "“{title}” diubah di Catatan",
+  "Delete “{title}” from Notes?": "Hapus “{title}” dari Catatan?",
+  "Deleted “{title}” from Notes": "“{title}” dihapus dari Catatan",
+  "Folder: {name}": "Folder: {name}",
+  "Looked at your latest notes": "Melihat catatan terbaru Anda",
+  "Read a note": "Baca catatan",
+  "Read “{title}”": "“{title}” dibaca",
+  "Searched your notes for “{query}”": "Mencari “{query}” di catatan Anda",
+  "To use Notes, allow Hob in System Settings → Privacy & Security → Automation → Notes.": "Untuk memakai Catatan, izinkan Hob di Pengaturan Sistem → Privasi & Keamanan → Otomatisasi → Catatan."
 }

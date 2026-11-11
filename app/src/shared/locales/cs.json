@@ -810,5 +810,19 @@
   "Mark as not done": "Označit jako nehotové",
   "Deleted “{title}” from Reminders": "„{title}“ smazáno z Připomínek",
   "Delete “{title}” from Reminders?": "Smazat „{title}“ z Připomínek?",
-  "Change “{title}” in Reminders?": "Změnit „{title}“ v Připomínkách?"
+  "Change “{title}” in Reminders?": "Změnit „{title}“ v Připomínkách?",
+  "Add to “{title}” in Notes?": "Přidat k „{title}“ v Poznámkách?",
+  "Add “{title}” to Notes?": "Přidat „{title}“ do Poznámek?",
+  "Added “{title}” to Notes": "„{title}“ přidáno do Poznámek",
+  "Allow Notes": "Povolit Poznámky",
+  "Change “{title}” in Notes?": "Změnit „{title}“ v Poznámkách?",
+  "Changed “{title}” in Notes": "„{title}“ změněno v Poznámkách",
+  "Delete “{title}” from Notes?": "Smazat „{title}“ z Poznámek?",
+  "Deleted “{title}” from Notes": "„{title}“ smazáno z Poznámek",
+  "Folder: {name}": "Složka: {name}",
+  "Looked at your latest notes": "Prohlédnuté nejnovější poznámky",
+  "Read a note": "Přečíst poznámku",
+  "Read “{title}”": "Přečteno „{title}“",
+  "Searched your notes for “{query}”": "Prohledány poznámky: „{query}“",
+  "To use Notes, allow Hob in System Settings → Privacy & Security → Automation → Notes.": "Pro použití Poznámek povolte Hob v Nastavení systému → Soukromí a zabezpečení → Automatizace → Poznámky."
 }

@@ -15,8 +15,8 @@ export type ModelOption = ModelSummary & {
   needsDiskGB: number
 }
 
-/** may Hob use Calendar, Mail and Reminders: granted, denied, notDetermined (not asked yet), notRunning (Mail isn't open), unavailable */
-export type MacAccess = { calendar: string; mail: string; reminders?: string }
+/** may Hob use Calendar, Mail, Reminders and Notes: granted, denied, notDetermined (not asked yet), notRunning (Mail isn't open), unavailable */
+export type MacAccess = { calendar: string; mail: string; reminders?: string; notes?: string }
 /** Google or Microsoft sign-in for calendar and email: what can be signed in to, and who is */
 export type AccountsState = { available: ('google' | 'microsoft')[]; current: { provider: 'google' | 'microsoft'; email: string } | null }
 
@@ -122,7 +122,7 @@ export interface HobApi {
   }
   approval: { answer(id: string, answer: ApprovalAnswer): Promise<void> }
   /** Calendar & Mail through the Mac's own apps; null on other systems */
-  mac: { access(): Promise<MacAccess | null>; ask(): Promise<MacAccess | null>; openAccounts(): Promise<void>; onChanged(cb: (access: MacAccess | null) => void): () => void }
+  mac: { access(): Promise<MacAccess | null>; ask(): Promise<MacAccess | null>; openAccounts(): Promise<void>; openNote(link: string): Promise<void>; onChanged(cb: (access: MacAccess | null) => void): () => void }
   accounts: {
     get(): Promise<AccountsState>
     /** opens the provider's page in the browser; resolves once signed in */

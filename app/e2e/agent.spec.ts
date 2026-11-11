@@ -338,7 +338,9 @@ test('Mac: "Connect my email and calendar" asks for access once, then Hob reads 
   await page.getByTestId('connect-apps-allow').click()
   await expect(page.getByRole('heading', { name: 'Email and calendar connected' })).toBeVisible()
   await expect(page.getByTestId('connect-apps')).toContainText('Reminders')
+  await expect(page.getByTestId('connect-apps')).toContainText('Notes')
   await expect(page.getByTestId('reminders-allow')).toHaveCount(0)
+  await expect(page.getByTestId('notes-allow')).toHaveCount(0)
   await page.getByTestId('connect-apps-try').click()
   await expect(page.getByTestId('connect-apps')).toBeHidden()
   await expect(page.getByTestId('composer-input')).toHaveValue("What's on my calendar this week?")
@@ -376,6 +378,31 @@ test('Mac: "Connect my email and calendar" asks for access once, then Hob reads 
   await expect(page.getByTestId('approval')).toContainText('Delete “Call the dentist” from Reminders')
   await page.getByTestId('approval-allow').click()
   await expect(page.getByTestId('message-assistant').last()).toContainText('Deleted “Call the dentist”')
+  await page.getByTestId('composer-input').fill('__tools__ [["notes_search",{"query":"trip"}]]')
+  await page.getByTestId('composer-send').click()
+  await expect(page.getByTestId('message-assistant').last()).toContainText('Trip ideas')
+  // a note's link opens it in Notes: the click goes to the app, not the browser
+  await app.evaluate(({ ipcMain }) => {
+    ipcMain.removeHandler('mac:openNote')
+    ipcMain.handle('mac:openNote', (_e, link: string) => { (globalThis as any).openedNote = link })
+  })
+  await page.getByTestId('note-link').last().click()
+  await expect.poll(() => app.evaluate(() => (globalThis as any).openedNote)).toBe('hob-note://N-1')
+  await page.getByTestId('composer-input').fill('__tools__ [["note_add",{"title":"Groceries","body":"Milk\\nEggs"}]]')
+  await page.getByTestId('composer-send').click()
+  await expect(page.getByTestId('approval')).toContainText('Add “Groceries” to Notes')
+  await page.getByTestId('approval-allow').click()
+  await expect(page.getByTestId('message-assistant').last()).toContainText('Added “Groceries” to the Notes notes')
+  await page.getByTestId('composer-input').fill('__tools__ [["note_update",{"id":"N-1","shown":"Trip ideas","append":"Madeira"}]]')
+  await page.getByTestId('composer-send').click()
+  await expect(page.getByTestId('approval')).toContainText('Add to “Trip ideas” in Notes')
+  await page.getByTestId('approval-allow').click()
+  await expect(page.getByTestId('message-assistant').last()).toContainText('Updated “Trip ideas”')
+  await page.getByTestId('composer-input').fill('__tools__ [["note_delete",{"id":"N-1","title":"Trip ideas"}]]')
+  await page.getByTestId('composer-send').click()
+  await expect(page.getByTestId('approval')).toContainText('Delete “Trip ideas” from Notes')
+  await page.getByTestId('approval-allow').click()
+  await expect(page.getByTestId('message-assistant').last()).toContainText('Deleted “Trip ideas”')
   await app.close()
 })
 
@@ -523,6 +550,54 @@ test('Mac: Reminders can be allowed on their own, a refusal shows the hint witho
     })
     await page.evaluate(() => window.dispatchEvent(new Event('focus')))
     await expect(dialog).not.toContainText('Privacy & Security → Reminders')
+    await expect(dialog).not.toContainText('Not allowed')
+  } finally { await app.close() }
+})
+
+test('Mac: Notes can be allowed on their own, a refusal shows the hint without undoing the connection, and System Settings changes refresh', async () => {
+  test.skip(process.platform !== 'darwin', 'Calendar & Mail is Mac only')
+  const { app, page } = await launch()
+  try {
+    await ready(page)
+    await app.evaluate(({ ipcMain, BrowserWindow }) => {
+      let access = { calendar: 'granted', mail: 'granted', reminders: 'granted', notes: 'notDetermined' }
+      ipcMain.removeHandler('mac:access'); ipcMain.handle('mac:access', () => access)
+      ipcMain.removeHandler('mac:ask')
+      ipcMain.handle('mac:ask', () => {
+        access = { ...access, notes: 'granted' }
+        for (const w of BrowserWindow.getAllWindows()) w.webContents.send('mac:access', access)
+        return access
+      })
+    })
+    await page.getByTestId('open-settings').click()
+    await page.getByTestId('settings-nav-plugins').click()
+    await page.getByTestId('calendar-mail-connect').click()
+    const dialog = page.getByTestId('connect-apps')
+    await expect(page.getByRole('heading', { name: 'Email and calendar connected' })).toBeVisible()
+    await expect(dialog).toContainText('Notes')
+    const allow = page.getByTestId('notes-allow')
+    await expect(allow).toBeVisible()
+    await allow.click()
+    await expect(allow).toHaveCount(0)
+    await expect(dialog).not.toContainText('Not yet')
+
+    await app.evaluate(({ ipcMain, BrowserWindow }) => {
+      const access = { calendar: 'granted', mail: 'granted', reminders: 'granted', notes: 'denied' }
+      ipcMain.removeHandler('mac:access'); ipcMain.handle('mac:access', () => access)
+      for (const w of BrowserWindow.getAllWindows()) w.webContents.send('mac:access', access)
+    })
+    await expect(dialog).toContainText('Not allowed')
+    await expect(dialog).toContainText('Automation → Notes')
+    await expect(page.getByTestId('notes-allow')).toHaveCount(0)
+    await expect(page.getByRole('heading', { name: 'Email and calendar connected' })).toBeVisible()
+    await expect(page.getByTestId('connect-apps-try')).toBeVisible()
+
+    await app.evaluate(({ ipcMain }) => {
+      ipcMain.removeHandler('mac:access')
+      ipcMain.handle('mac:access', () => ({ calendar: 'granted', mail: 'granted', reminders: 'granted', notes: 'granted' }))
+    })
+    await page.evaluate(() => window.dispatchEvent(new Event('focus')))
+    await expect(dialog).not.toContainText('Automation → Notes')
     await expect(dialog).not.toContainText('Not allowed')
   } finally { await app.close() }
 })

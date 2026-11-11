@@ -792,5 +792,19 @@
   "Mark as not done": "Marchează ca nefinalizat",
   "Deleted “{title}” from Reminders": "„{title}” a fost șters din Mementouri",
   "Delete “{title}” from Reminders?": "Șterg „{title}” din Mementouri?",
-  "Change “{title}” in Reminders?": "Modific „{title}” în Mementouri?"
+  "Change “{title}” in Reminders?": "Modific „{title}” în Mementouri?",
+  "Add to “{title}” in Notes?": "Adaug la „{title}” în Notițe?",
+  "Add “{title}” to Notes?": "Adaug „{title}” la Notițe?",
+  "Added “{title}” to Notes": "„{title}” a fost adăugată la Notițe",
+  "Allow Notes": "Permite Notițe",
+  "Change “{title}” in Notes?": "Modific „{title}” în Notițe?",
+  "Changed “{title}” in Notes": "„{title}” a fost modificată în Notițe",
+  "Delete “{title}” from Notes?": "Șterg „{title}” din Notițe?",
+  "Deleted “{title}” from Notes": "„{title}” a fost ștearsă din Notițe",
+  "Folder: {name}": "Dosar: {name}",
+  "Looked at your latest notes": "S-a uitat la cele mai recente notițe",
+  "Read a note": "Citește o notiță",
+  "Read “{title}”": "A citit „{title}”",
+  "Searched your notes for “{query}”": "A căutat „{query}” în notițele tale",
+  "To use Notes, allow Hob in System Settings → Privacy & Security → Automation → Notes.": "Pentru a folosi Notițe, permite Hob în Setări de sistem → Confidențialitate și securitate → Automatizare → Notițe."
 }

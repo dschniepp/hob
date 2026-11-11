@@ -208,21 +208,23 @@ export const mailDraft: Tool<{ to: string; subject: string; body: string }> = {
   },
 }
 
-/** may Hob use Calendar and Mail? (no prompts) */
-export async function macAccess(): Promise<{ calendar: string; mail: string; reminders: string }> {
-  const [c, m, r] = await Promise.all([
+/** may Hob use Calendar, Mail, Reminders and Notes? (no prompts) */
+export async function macAccess(): Promise<{ calendar: string; mail: string; reminders: string; notes: string }> {
+  const [c, m, r, n] = await Promise.all([
     deps.helper(['calendar-status']).catch(() => ({ status: 'unavailable' })),
     deps.helper(['mail-status']).catch(() => ({ status: 'unavailable' })),
     deps.helper(['reminder-status']).catch(() => ({ status: 'unavailable' })),
+    deps.helper(['notes-status']).catch(() => ({ status: 'unavailable' })),
   ]) as { status: string }[]
-  return { calendar: c.status, mail: m.status, reminders: r.status }
+  return { calendar: c.status, mail: m.status, reminders: r.status, notes: n.status }
 }
 /** the system's own prompts, one after the other */
-export async function askMacAccess(): Promise<{ calendar: string; mail: string; reminders: string }> {
+export async function askMacAccess(): Promise<{ calendar: string; mail: string; reminders: string; notes: string }> {
   const c = await deps.helper(['calendar-auth']).catch(() => ({ status: 'unavailable' })) as { status: string }
   const m = await deps.helper(['mail-auth']).catch(() => ({ status: 'unavailable' })) as { status: string }
   const r = await deps.helper(['reminder-auth']).catch(() => ({ status: 'unavailable' })) as { status: string }
-  return { calendar: c.status, mail: m.status, reminders: r.status }
+  const n = await deps.helper(['notes-auth']).catch(() => ({ status: 'unavailable' })) as { status: string }
+  return { calendar: c.status, mail: m.status, reminders: r.status, notes: n.status }
 }
 
 export const macTools = (): Tool<any>[] => [calendarEvents, calendarAddEvent, mailSearch, mailRead, mailDraft]

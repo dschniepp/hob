@@ -23,6 +23,7 @@ import { pruneUndo } from './agent/journal'
 import { PythonRuntime, realRuntimeDeps } from './python/runtime'
 import { VisionInstaller } from './vision/install'
 import { macCalMail, setCalMailSource, setMacDeps } from './tools/mac'
+import { NOTES_SCRIPTS, setNotesRunner } from './tools/notes'
 import { setReminderHelper } from './tools/reminders'
 import { Accounts } from './accounts'
 import { VisionServer } from './vision/server'
@@ -250,6 +251,13 @@ app.whenReady().then(() => {
   if (FAKE) setReminderHelper(async (args) => (args[0] === 'reminders'
     ? [{ id: 'R-1', title: 'Call the dentist', list: 'Home', due: '2026-10-22T09:00:00Z' }]
     : { id: 'R-2', title: 'Call the dentist', ...JSON.parse(args[1]), list: 'Home' }))
+  if (FAKE) setNotesRunner(async (script, args) => {
+    const o = args[0].startsWith('{') ? JSON.parse(args[0]) : {}
+    if (script === NOTES_SCRIPTS.SEARCH) return JSON.stringify([{ id: 'N-1', title: 'Trip ideas', folder: 'Notes', modified: '2026-10-20T08:00:00Z', snippet: 'Lisbon, Porto' }])
+    if (script === NOTES_SCRIPTS.READ) return JSON.stringify({ id: 'N-1', title: 'Trip ideas', folder: 'Notes', created: '2026-10-01T08:00:00Z', modified: '2026-10-20T08:00:00Z', text: 'Trip ideas\nLisbon, Porto' })
+    if (script === NOTES_SCRIPTS.ADD) return JSON.stringify({ id: 'N-2', title: o.title, folder: o.folder ?? 'Notes' })
+    return JSON.stringify({ id: 'N-1', title: 'Trip ideas', folder: 'Notes' })
+  })
   setup.onState((s) => { if ((s.phase === 'downloading' && s.chatReady) || s.phase === 'ready') vision.start() })
   // dictation's model too, as soon as chat works, so the mic is ready the first time it's clicked
   // (once: setup reports download progress many times a second; again after a failed try, e.g. offline)

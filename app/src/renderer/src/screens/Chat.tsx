@@ -1,5 +1,5 @@
 import { Fragment, useEffect, useRef, useState } from 'react'
-import Markdown, { type Options } from 'react-markdown'
+import Markdown, { defaultUrlTransform, type Options } from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import remarkMath from 'remark-math'
 import rehypeKatex from 'rehype-katex'
@@ -41,7 +41,13 @@ function UserText({ text, skills }: { text: string; skills: SkillRef[] }) {
 /** short text in a cell ("Day 1", "$40") stays on one line */
 const cellText = (n: React.ReactNode): string => (typeof n === 'string' || typeof n === 'number' ? String(n) : Array.isArray(n) ? n.map(cellText).join('') : '')
 const short = (children: React.ReactNode) => cellText(children).trim().length <= 14
+/** a note link (hob-note://…) opens the note in Notes; every other link goes to the browser as before */
+const NOTE_LINK = /^hob-note:\/\//
+const urlTransform = (url: string) => NOTE_LINK.test(url) ? url : defaultUrlTransform(url)
 const MARKDOWN_COMPONENTS = {
+  a: ({ href, children }: { href?: string; children?: React.ReactNode }) => href && NOTE_LINK.test(href)
+    ? <a href={href} data-testid="note-link" onClick={(e) => { e.preventDefault(); void hob.mac.openNote(href) }}>{children}</a>
+    : <a href={href}>{children}</a>,
   // wide tables scroll sideways instead of squeezing columns until words break
   table: ({ children }: { children?: React.ReactNode }) => <div className="table-scroll"><table>{children}</table></div>,
   th: ({ children, style }: { children?: React.ReactNode; style?: React.CSSProperties }) => <th style={style} className={short(children) ? 'whitespace-nowrap' : undefined}>{children}</th>,
@@ -84,7 +90,7 @@ const KATEX: NonNullable<Options['rehypePlugins']>[number] = [rehypeKatex, { thr
 function ReplyText({ content, live }: { content: string; live: boolean }) {
   const text = useSteadyText(content, live)
   // live: new words fade in; finished: plain text (no extra spans in long chats)
-  return text ? <Markdown remarkPlugins={REMARK} rehypePlugins={live ? [rehypeLineBreaks, rehypeFadeWords, KATEX] : [rehypeLineBreaks, KATEX]} components={MARKDOWN_COMPONENTS}>{withMath(tidyMarkdown(live ? healMarkdown(text) : text))}</Markdown> : null
+  return text ? <Markdown remarkPlugins={REMARK} rehypePlugins={live ? [rehypeLineBreaks, rehypeFadeWords, KATEX] : [rehypeLineBreaks, KATEX]} components={MARKDOWN_COMPONENTS} urlTransform={urlTransform}>{withMath(tidyMarkdown(live ? healMarkdown(text) : text))}</Markdown> : null
 }
 /** a sent message, being edited in place: Enter sends, Shift+Enter is a new line, Esc cancels */
 function EditMessage({ text, onSend, onCancel }: { text: string; onSend(text: string): void; onCancel(): void }) {

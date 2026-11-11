@@ -774,5 +774,19 @@
   "Mark as not done": "Merk som ikke fullført",
   "Deleted “{title}” from Reminders": "«{title}» slettet fra Påminnelser",
   "Delete “{title}” from Reminders?": "Slette «{title}» fra Påminnelser?",
-  "Change “{title}” in Reminders?": "Endre «{title}» i Påminnelser?"
+  "Change “{title}” in Reminders?": "Endre «{title}» i Påminnelser?",
+  "Add to “{title}” in Notes?": "Legge til i «{title}» i Notater?",
+  "Add “{title}” to Notes?": "Legge «{title}» til Notater?",
+  "Added “{title}” to Notes": "«{title}» lagt til i Notater",
+  "Allow Notes": "Tillat Notater",
+  "Change “{title}” in Notes?": "Endre «{title}» i Notater?",
+  "Changed “{title}” in Notes": "«{title}» endret i Notater",
+  "Delete “{title}” from Notes?": "Slette «{title}» fra Notater?",
+  "Deleted “{title}” from Notes": "«{title}» slettet fra Notater",
+  "Folder: {name}": "Mappe: {name}",
+  "Looked at your latest notes": "Så på de nyeste notatene dine",
+  "Read a note": "Les et notat",
+  "Read “{title}”": "Leste «{title}»",
+  "Searched your notes for “{query}”": "Søkte i notatene dine etter «{query}»",
+  "To use Notes, allow Hob in System Settings → Privacy & Security → Automation → Notes.": "For å bruke Notater må du gi Hob tilgang i Systeminnstillinger → Personvern og sikkerhet → Automatisering → Notater."
 }
