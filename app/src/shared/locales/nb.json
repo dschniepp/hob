@@ -765,5 +765,14 @@
   "Searched your reminders for “{query}”": "Søkte i påminnelsene dine etter «{query}»",
   "Reminders": "Påminnelser",
   "Allow Reminders": "Tillat Påminnelser",
-  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "For å bruke Påminnelser, gi Hob tilgang i Systeminnstillinger → Personvern og sikkerhet → Påminnelser."
+  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "For å bruke Påminnelser, gi Hob tilgang i Systeminnstillinger → Personvern og sikkerhet → Påminnelser.",
+  "Ticked off “{title}”": "«{title}» avkrysset",
+  "Changed “{title}” in Reminders": "«{title}» endret i Påminnelser",
+  "Tick off “{title}” in Reminders?": "Krysse av «{title}» i Påminnelser?",
+  "New title: {name}": "Ny tittel: {name}",
+  "Mark as done": "Merk som fullført",
+  "Mark as not done": "Merk som ikke fullført",
+  "Deleted “{title}” from Reminders": "«{title}» slettet fra Påminnelser",
+  "Delete “{title}” from Reminders?": "Slette «{title}» fra Påminnelser?",
+  "Change “{title}” in Reminders?": "Endre «{title}» i Påminnelser?"
 }

@@ -801,5 +801,14 @@
   "Searched your reminders for “{query}”": "Przeszukano Twoje przypomnienia pod kątem „{query}”",
   "Reminders": "Przypomnienia",
   "Allow Reminders": "Zezwól na Przypomnienia",
-  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "Aby korzystać z Przypomnień, zezwól Hob w Ustawieniach systemowych → Prywatność i ochrona → Przypomnienia."
+  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "Aby korzystać z Przypomnień, zezwól Hob w Ustawieniach systemowych → Prywatność i ochrona → Przypomnienia.",
+  "Ticked off “{title}”": "Odznaczono „{title}”",
+  "Changed “{title}” in Reminders": "Zmieniono „{title}” w Przypomnieniach",
+  "Tick off “{title}” in Reminders?": "Odznaczyć „{title}” w Przypomnieniach?",
+  "New title: {name}": "Nowy tytuł: {name}",
+  "Mark as done": "Oznacz jako ukończone",
+  "Mark as not done": "Oznacz jako nieukończone",
+  "Deleted “{title}” from Reminders": "Usunięto „{title}” z Przypomnień",
+  "Delete “{title}” from Reminders?": "Usunąć „{title}” z Przypomnień?",
+  "Change “{title}” in Reminders?": "Zmienić „{title}” w Przypomnieniach?"
 }

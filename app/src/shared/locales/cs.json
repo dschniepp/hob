@@ -801,5 +801,14 @@
   "Searched your reminders for “{query}”": "V připomínkách hledáno „{query}“",
   "Reminders": "Připomínky",
   "Allow Reminders": "Povolit Připomínky",
-  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "Chcete-li používat Připomínky, povolte Hob v Nastavení systému → Soukromí a zabezpečení → Připomínky."
+  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "Chcete-li používat Připomínky, povolte Hob v Nastavení systému → Soukromí a zabezpečení → Připomínky.",
+  "Ticked off “{title}”": "„{title}“ odškrtnuto",
+  "Changed “{title}” in Reminders": "„{title}“ změněno v Připomínkách",
+  "Tick off “{title}” in Reminders?": "Odškrtnout „{title}“ v Připomínkách?",
+  "New title: {name}": "Nový název: {name}",
+  "Mark as done": "Označit jako hotové",
+  "Mark as not done": "Označit jako nehotové",
+  "Deleted “{title}” from Reminders": "„{title}“ smazáno z Připomínek",
+  "Delete “{title}” from Reminders?": "Smazat „{title}“ z Připomínek?",
+  "Change “{title}” in Reminders?": "Změnit „{title}“ v Připomínkách?"
 }

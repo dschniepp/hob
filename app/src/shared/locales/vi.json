@@ -711,5 +711,14 @@
   "Searched your reminders for “{query}”": "Đã tìm “{query}” trong lời nhắc của bạn",
   "Reminders": "Lời nhắc",
   "Allow Reminders": "Cho phép Lời nhắc",
-  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "Để dùng Lời nhắc, hãy cho phép Hob trong Cài đặt hệ thống → Quyền riêng tư & Bảo mật → Lời nhắc."
+  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "Để dùng Lời nhắc, hãy cho phép Hob trong Cài đặt hệ thống → Quyền riêng tư & Bảo mật → Lời nhắc.",
+  "Ticked off “{title}”": "Đã hoàn thành “{title}”",
+  "Changed “{title}” in Reminders": "Đã đổi “{title}” trong Lời nhắc",
+  "Tick off “{title}” in Reminders?": "Hoàn thành “{title}” trong Lời nhắc?",
+  "New title: {name}": "Tiêu đề mới: {name}",
+  "Mark as done": "Đánh dấu đã hoàn thành",
+  "Mark as not done": "Đánh dấu chưa hoàn thành",
+  "Deleted “{title}” from Reminders": "Đã xóa “{title}” khỏi Lời nhắc",
+  "Delete “{title}” from Reminders?": "Xóa “{title}” khỏi Lời nhắc?",
+  "Change “{title}” in Reminders?": "Đổi “{title}” trong Lời nhắc?"
 }

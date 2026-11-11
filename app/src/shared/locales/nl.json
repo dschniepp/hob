@@ -765,5 +765,14 @@
   "Searched your reminders for “{query}”": "In je herinneringen gezocht naar “{query}”",
   "Reminders": "Herinneringen",
   "Allow Reminders": "Herinneringen toestaan",
-  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "Om Herinneringen te gebruiken, geef Hob toegang in Systeeminstellingen → Privacy en beveiliging → Herinneringen."
+  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "Om Herinneringen te gebruiken, geef Hob toegang in Systeeminstellingen → Privacy en beveiliging → Herinneringen.",
+  "Ticked off “{title}”": "“{title}” afgevinkt",
+  "Changed “{title}” in Reminders": "“{title}” gewijzigd in Herinneringen",
+  "Tick off “{title}” in Reminders?": "“{title}” afvinken in Herinneringen?",
+  "New title: {name}": "Nieuwe titel: {name}",
+  "Mark as done": "Markeren als voltooid",
+  "Mark as not done": "Markeren als niet voltooid",
+  "Deleted “{title}” from Reminders": "“{title}” verwijderd uit Herinneringen",
+  "Delete “{title}” from Reminders?": "“{title}” verwijderen uit Herinneringen?",
+  "Change “{title}” in Reminders?": "“{title}” wijzigen in Herinneringen?"
 }

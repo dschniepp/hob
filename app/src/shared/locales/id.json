@@ -711,5 +711,14 @@
   "Searched your reminders for “{query}”": "Mencari “{query}” di pengingat Anda",
   "Reminders": "Pengingat",
   "Allow Reminders": "Izinkan Pengingat",
-  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "Untuk memakai Pengingat, izinkan Hob di Pengaturan Sistem → Privasi & Keamanan → Pengingat."
+  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "Untuk memakai Pengingat, izinkan Hob di Pengaturan Sistem → Privasi & Keamanan → Pengingat.",
+  "Ticked off “{title}”": "“{title}” dicentang",
+  "Changed “{title}” in Reminders": "“{title}” diubah di Pengingat",
+  "Tick off “{title}” in Reminders?": "Centang “{title}” di Pengingat?",
+  "New title: {name}": "Judul baru: {name}",
+  "Mark as done": "Tandai selesai",
+  "Mark as not done": "Tandai belum selesai",
+  "Deleted “{title}” from Reminders": "“{title}” dihapus dari Pengingat",
+  "Delete “{title}” from Reminders?": "Hapus “{title}” dari Pengingat?",
+  "Change “{title}” in Reminders?": "Ubah “{title}” di Pengingat?"
 }

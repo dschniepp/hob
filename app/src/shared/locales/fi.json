@@ -765,5 +765,14 @@
   "Searched your reminders for “{query}”": "Haki muistutuksistasi: ”{query}”",
   "Reminders": "Muistutukset",
   "Allow Reminders": "Salli Muistutukset",
-  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "Jos haluat käyttää Muistutuksia, salli Hob kohdassa Järjestelmäasetukset → Tietosuoja ja turvallisuus → Muistutukset."
+  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "Jos haluat käyttää Muistutuksia, salli Hob kohdassa Järjestelmäasetukset → Tietosuoja ja turvallisuus → Muistutukset.",
+  "Ticked off “{title}”": "”{title}” merkitty tehdyksi",
+  "Changed “{title}” in Reminders": "”{title}” muutettu Muistutuksissa",
+  "Tick off “{title}” in Reminders?": "Merkitäänkö ”{title}” tehdyksi Muistutuksissa?",
+  "New title: {name}": "Uusi otsikko: {name}",
+  "Mark as done": "Merkitse tehdyksi",
+  "Mark as not done": "Merkitse tekemättömäksi",
+  "Deleted “{title}” from Reminders": "”{title}” poistettu Muistutuksista",
+  "Delete “{title}” from Reminders?": "Poistetaanko ”{title}” Muistutuksista?",
+  "Change “{title}” in Reminders?": "Muutetaanko ”{title}” Muistutuksissa?"
 }

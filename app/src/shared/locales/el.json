@@ -765,5 +765,14 @@
   "Searched your reminders for “{query}”": "Αναζήτηση στις υπενθυμίσεις σας για «{query}»",
   "Reminders": "Υπενθυμίσεις",
   "Allow Reminders": "Να επιτρέπονται οι Υπενθυμίσεις",
-  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "Για να χρησιμοποιήσετε τις Υπενθυμίσεις, επιτρέψτε το Hob στις Ρυθμίσεις συστήματος → Απόρρητο και ασφάλεια → Υπενθυμίσεις."
+  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "Για να χρησιμοποιήσετε τις Υπενθυμίσεις, επιτρέψτε το Hob στις Ρυθμίσεις συστήματος → Απόρρητο και ασφάλεια → Υπενθυμίσεις.",
+  "Ticked off “{title}”": "Το «{title}» ολοκληρώθηκε",
+  "Changed “{title}” in Reminders": "Το «{title}» άλλαξε στις Υπενθυμίσεις",
+  "Tick off “{title}” in Reminders?": "Ολοκλήρωση του «{title}» στις Υπενθυμίσεις;",
+  "New title: {name}": "Νέος τίτλος: {name}",
+  "Mark as done": "Επισήμανση ως ολοκληρωμένο",
+  "Mark as not done": "Επισήμανση ως μη ολοκληρωμένο",
+  "Deleted “{title}” from Reminders": "Το «{title}» διαγράφηκε από τις Υπενθυμίσεις",
+  "Delete “{title}” from Reminders?": "Διαγραφή του «{title}» από τις Υπενθυμίσεις;",
+  "Change “{title}” in Reminders?": "Αλλαγή του «{title}» στις Υπενθυμίσεις;"
 }

@@ -765,5 +765,14 @@
   "Searched your reminders for “{query}”": "Anımsatıcılarınızda “{query}” arandı",
   "Reminders": "Anımsatıcılar",
   "Allow Reminders": "Anımsatıcılar’a izin ver",
-  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "Anımsatıcılar’ı kullanmak için Sistem Ayarları → Gizlilik ve Güvenlik → Anımsatıcılar bölümünde Hob’a izin verin."
+  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "Anımsatıcılar’ı kullanmak için Sistem Ayarları → Gizlilik ve Güvenlik → Anımsatıcılar bölümünde Hob’a izin verin.",
+  "Ticked off “{title}”": "“{title}” tamamlandı",
+  "Changed “{title}” in Reminders": "“{title}” Anımsatıcılar’da değiştirildi",
+  "Tick off “{title}” in Reminders?": "“{title}” Anımsatıcılar’da tamamlansın mı?",
+  "New title: {name}": "Yeni başlık: {name}",
+  "Mark as done": "Tamamlandı olarak işaretle",
+  "Mark as not done": "Tamamlanmadı olarak işaretle",
+  "Deleted “{title}” from Reminders": "“{title}” Anımsatıcılar’dan silindi",
+  "Delete “{title}” from Reminders?": "“{title}” Anımsatıcılar’dan silinsin mi?",
+  "Change “{title}” in Reminders?": "“{title}” Anımsatıcılar’da değiştirilsin mi?"
 }

@@ -837,5 +837,14 @@
   "Searched your reminders for “{query}”": "تم البحث في تذكيراتك عن «{query}»",
   "Reminders": "التذكيرات",
   "Allow Reminders": "السماح بالتذكيرات",
-  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "لاستخدام التذكيرات، اسمح لـ Hob في إعدادات النظام ← الخصوصية والأمان ← التذكيرات."
+  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "لاستخدام التذكيرات، اسمح لـ Hob في إعدادات النظام ← الخصوصية والأمان ← التذكيرات.",
+  "Ticked off “{title}”": "تم إكمال «{title}»",
+  "Changed “{title}” in Reminders": "تم تعديل «{title}» في التذكيرات",
+  "Tick off “{title}” in Reminders?": "وضع علامة إكمال على «{title}» في التذكيرات؟",
+  "New title: {name}": "العنوان الجديد: {name}",
+  "Mark as done": "تحديد كمكتمل",
+  "Mark as not done": "تحديد كغير مكتمل",
+  "Deleted “{title}” from Reminders": "تم حذف «{title}» من التذكيرات",
+  "Delete “{title}” from Reminders?": "حذف «{title}» من التذكيرات؟",
+  "Change “{title}” in Reminders?": "تعديل «{title}» في التذكيرات؟"
 }

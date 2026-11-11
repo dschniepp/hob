@@ -765,5 +765,14 @@
   "Searched your reminders for “{query}”": "Keresés az emlékeztetőidben: „{query}”",
   "Reminders": "Emlékeztetők",
   "Allow Reminders": "Emlékeztetők engedélyezése",
-  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "Az Emlékeztetők használatához engedélyezd a Hobot a Rendszerbeállítások → Adatvédelem és biztonság → Emlékeztetők részen."
+  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "Az Emlékeztetők használatához engedélyezd a Hobot a Rendszerbeállítások → Adatvédelem és biztonság → Emlékeztetők részen.",
+  "Ticked off “{title}”": "A(z) „{title}” kipipálva",
+  "Changed “{title}” in Reminders": "A(z) „{title}” módosítva az Emlékeztetőkben",
+  "Tick off “{title}” in Reminders?": "Kipipálod a(z) „{title}” elemet az Emlékeztetőkben?",
+  "New title: {name}": "Új cím: {name}",
+  "Mark as done": "Megjelölés késznek",
+  "Mark as not done": "Megjelölés nem késznek",
+  "Deleted “{title}” from Reminders": "A(z) „{title}” törölve az Emlékeztetőkből",
+  "Delete “{title}” from Reminders?": "Törlöd a(z) „{title}” elemet az Emlékeztetőkből?",
+  "Change “{title}” in Reminders?": "Módosítod a(z) „{title}” elemet az Emlékeztetőkben?"
 }

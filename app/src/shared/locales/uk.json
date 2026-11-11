@@ -801,5 +801,14 @@
   "Searched your reminders for “{query}”": "Пошук «{query}» у ваших нагадуваннях",
   "Reminders": "Нагадування",
   "Allow Reminders": "Дозволити Нагадування",
-  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "Щоб користуватися Нагадуваннями, дозвольте Hob у Системних параметрах → Конфіденційність і безпека → Нагадування."
+  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "Щоб користуватися Нагадуваннями, дозвольте Hob у Системних параметрах → Конфіденційність і безпека → Нагадування.",
+  "Ticked off “{title}”": "«{title}» позначено виконаним",
+  "Changed “{title}” in Reminders": "«{title}» змінено в Нагадуваннях",
+  "Tick off “{title}” in Reminders?": "Позначити «{title}» виконаним у Нагадуваннях?",
+  "New title: {name}": "Нова назва: {name}",
+  "Mark as done": "Позначити як виконане",
+  "Mark as not done": "Позначити як невиконане",
+  "Deleted “{title}” from Reminders": "«{title}» видалено з Нагадувань",
+  "Delete “{title}” from Reminders?": "Видалити «{title}» з Нагадувань?",
+  "Change “{title}” in Reminders?": "Змінити «{title}» у Нагадуваннях?"
 }

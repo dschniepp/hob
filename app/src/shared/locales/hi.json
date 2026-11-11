@@ -765,5 +765,14 @@
   "Searched your reminders for “{query}”": "आपके रिमाइंडर में “{query}” खोजा गया",
   "Reminders": "रिमाइंडर",
   "Allow Reminders": "रिमाइंडर की अनुमति दें",
-  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "रिमाइंडर इस्तेमाल करने के लिए सिस्टम सेटिंग्स → गोपनीयता और सुरक्षा → रिमाइंडर में Hob को अनुमति दें।"
+  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "रिमाइंडर इस्तेमाल करने के लिए सिस्टम सेटिंग्स → गोपनीयता और सुरक्षा → रिमाइंडर में Hob को अनुमति दें।",
+  "Ticked off “{title}”": "“{title}” पूरा हो गया",
+  "Changed “{title}” in Reminders": "रिमाइंडर में “{title}” बदला गया",
+  "Tick off “{title}” in Reminders?": "रिमाइंडर में “{title}” को पूरा करें?",
+  "New title: {name}": "नया शीर्षक: {name}",
+  "Mark as done": "पूरा हुआ चिह्नित करें",
+  "Mark as not done": "अधूरा चिह्नित करें",
+  "Deleted “{title}” from Reminders": "रिमाइंडर से “{title}” हटाया गया",
+  "Delete “{title}” from Reminders?": "रिमाइंडर से “{title}” हटाएँ?",
+  "Change “{title}” in Reminders?": "रिमाइंडर में “{title}” बदलें?"
 }

@@ -783,5 +783,14 @@
   "Searched your reminders for “{query}”": "Cercato “{query}” nei tuoi promemoria",
   "Reminders": "Promemoria",
   "Allow Reminders": "Consenti Promemoria",
-  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "Per usare Promemoria, consenti a Hob in Impostazioni di Sistema → Privacy e sicurezza → Promemoria."
+  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "Per usare Promemoria, consenti a Hob in Impostazioni di Sistema → Privacy e sicurezza → Promemoria.",
+  "Ticked off “{title}”": "“{title}” completato",
+  "Changed “{title}” in Reminders": "“{title}” modificato in Promemoria",
+  "Tick off “{title}” in Reminders?": "Completare “{title}” in Promemoria?",
+  "New title: {name}": "Nuovo titolo: {name}",
+  "Mark as done": "Segna come completato",
+  "Mark as not done": "Segna come non completato",
+  "Deleted “{title}” from Reminders": "“{title}” eliminato da Promemoria",
+  "Delete “{title}” from Reminders?": "Eliminare “{title}” da Promemoria?",
+  "Change “{title}” in Reminders?": "Modificare “{title}” in Promemoria?"
 }

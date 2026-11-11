@@ -711,5 +711,14 @@
   "Searched your reminders for “{query}”": "在你的提醒事项中搜索了“{query}”",
   "Reminders": "提醒事项",
   "Allow Reminders": "允许提醒事项",
-  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "要使用提醒事项，请在“系统设置”→“隐私与安全性”→“提醒事项”中允许 Hob。"
+  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "要使用提醒事项，请在“系统设置”→“隐私与安全性”→“提醒事项”中允许 Hob。",
+  "Ticked off “{title}”": "已完成“{title}”",
+  "Changed “{title}” in Reminders": "已在提醒事项中更改“{title}”",
+  "Tick off “{title}” in Reminders?": "在提醒事项中完成“{title}”？",
+  "New title: {name}": "新标题：{name}",
+  "Mark as done": "标记为已完成",
+  "Mark as not done": "标记为未完成",
+  "Deleted “{title}” from Reminders": "已从提醒事项中删除“{title}”",
+  "Delete “{title}” from Reminders?": "从提醒事项中删除“{title}”？",
+  "Change “{title}” in Reminders?": "在提醒事项中更改“{title}”？"
 }

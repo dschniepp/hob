@@ -783,5 +783,14 @@
   "Searched your reminders for “{query}”": "Busca por “{query}” nos seus lembretes",
   "Reminders": "Lembretes",
   "Allow Reminders": "Permitir Lembretes",
-  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "Para usar Lembretes, permita o Hob em Ajustes do Sistema → Privacidade e Segurança → Lembretes."
+  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "Para usar Lembretes, permita o Hob em Ajustes do Sistema → Privacidade e Segurança → Lembretes.",
+  "Ticked off “{title}”": "“{title}” concluído",
+  "Changed “{title}” in Reminders": "“{title}” alterado em Lembretes",
+  "Tick off “{title}” in Reminders?": "Concluir “{title}” em Lembretes?",
+  "New title: {name}": "Novo título: {name}",
+  "Mark as done": "Marcar como concluído",
+  "Mark as not done": "Marcar como não concluído",
+  "Deleted “{title}” from Reminders": "“{title}” excluído de Lembretes",
+  "Delete “{title}” from Reminders?": "Excluir “{title}” de Lembretes?",
+  "Change “{title}” in Reminders?": "Alterar “{title}” em Lembretes?"
 }

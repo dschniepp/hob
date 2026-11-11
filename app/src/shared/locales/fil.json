@@ -765,5 +765,14 @@
   "Searched your reminders for “{query}”": "Hinanap ang “{query}” sa iyong mga paalala",
   "Reminders": "Mga Paalala",
   "Allow Reminders": "Payagan ang Mga Paalala",
-  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "Para magamit ang Mga Paalala, payagan ang Hob sa System Settings → Privacy & Security → Reminders."
+  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "Para magamit ang Mga Paalala, payagan ang Hob sa System Settings → Privacy & Security → Reminders.",
+  "Ticked off “{title}”": "Natapos ang “{title}”",
+  "Changed “{title}” in Reminders": "Binago ang “{title}” sa Mga Paalala",
+  "Tick off “{title}” in Reminders?": "Markahang tapos ang “{title}” sa Mga Paalala?",
+  "New title: {name}": "Bagong pamagat: {name}",
+  "Mark as done": "Markahang tapos",
+  "Mark as not done": "Markahang hindi pa tapos",
+  "Deleted “{title}” from Reminders": "Binura ang “{title}” sa Mga Paalala",
+  "Delete “{title}” from Reminders?": "Burahin ang “{title}” sa Mga Paalala?",
+  "Change “{title}” in Reminders?": "Baguhin ang “{title}” sa Mga Paalala?"
 }

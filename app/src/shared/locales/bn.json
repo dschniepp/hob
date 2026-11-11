@@ -765,5 +765,14 @@
   "Searched your reminders for “{query}”": "আপনার রিমাইন্ডারে “{query}” খোঁজা হয়েছে",
   "Reminders": "রিমাইন্ডার",
   "Allow Reminders": "রিমাইন্ডারের অনুমতি দিন",
-  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "রিমাইন্ডার ব্যবহার করতে সিস্টেম সেটিংস → গোপনীয়তা ও নিরাপত্তা → রিমাইন্ডারে Hob-কে অনুমতি দিন।"
+  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "রিমাইন্ডার ব্যবহার করতে সিস্টেম সেটিংস → গোপনীয়তা ও নিরাপত্তা → রিমাইন্ডারে Hob-কে অনুমতি দিন।",
+  "Ticked off “{title}”": "“{title}” সম্পন্ন করা হয়েছে",
+  "Changed “{title}” in Reminders": "রিমাইন্ডারে “{title}” পরিবর্তন করা হয়েছে",
+  "Tick off “{title}” in Reminders?": "রিমাইন্ডারে “{title}” সম্পন্ন চিহ্নিত করবেন?",
+  "New title: {name}": "নতুন শিরোনাম: {name}",
+  "Mark as done": "সম্পন্ন চিহ্নিত করুন",
+  "Mark as not done": "অসম্পন্ন চিহ্নিত করুন",
+  "Deleted “{title}” from Reminders": "রিমাইন্ডার থেকে “{title}” মুছে ফেলা হয়েছে",
+  "Delete “{title}” from Reminders?": "রিমাইন্ডার থেকে “{title}” মুছবেন?",
+  "Change “{title}” in Reminders?": "রিমাইন্ডারে “{title}” পরিবর্তন করবেন?"
 }

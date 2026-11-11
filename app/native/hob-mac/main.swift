@@ -8,7 +8,9 @@
 //   hob-mac reminder-status                → {"status":"granted"|"denied"|"notDetermined"}
 //   hob-mac reminder-auth                  → asks once (the system's own prompt), then the status
 //   hob-mac reminders JSON                → [{"title","list","due"?,"notes"?}]; JSON: {"query"?,"includeCompleted"?,"completedSince"?}; completed ones come last with "completed": true, "completedOn"?
-//   hob-mac add-reminder JSON              → {"title","due"?,"list"?,"notes"?}; asks for Reminders access the first time
+//   hob-mac add-reminder JSON              → {"title","due"?,"list"?,"notes"?,"url"?,"priority"?,"repeat"?,"repeatEvery"?,"alarm"?}; asks for Reminders access the first time
+//   hob-mac update-reminder JSON           → {"id", …the same fields, "completed"?}; "" clears due/notes/url, repeat "none" stops repeating
+//   hob-mac delete-reminder JSON           → {"id"}
 //   hob-mac mail-status | mail-auth        → may Hob talk to the Mail app? (mail-auth opens Mail and asks once)
 import AppKit
 import EventKit
@@ -68,6 +70,74 @@ func needReminderAccess() {
 }
 
 let args = Array(CommandLine.arguments.dropFirst())
+
+let priorityNames: [String: Int] = ["high": 1, "medium": 5, "low": 9, "none": 0]
+let repeatFrequencies: [String: EKRecurrenceFrequency] = ["daily": .daily, "weekly": .weekly, "monthly": .monthly, "yearly": .yearly]
+
+func dueDate(_ r: EKReminder) -> Date? { r.dueDateComponents.flatMap { Calendar.current.date(from: $0) } }
+
+func describe(_ r: EKReminder) -> [String: Any] {
+  var o: [String: Any] = ["id": r.calendarItemIdentifier, "title": r.title ?? "(no title)", "list": r.calendar.title, "completed": r.isCompleted]
+  if let d = r.completionDate { o["completedOn"] = iso.string(from: d) }
+  if let n = r.notes, !n.isEmpty { o["notes"] = String(n.prefix(1000)) }
+  if let d = dueDate(r) { o["due"] = iso.string(from: d) }
+  if let u = r.url { o["url"] = u.absoluteString }
+  if let p = priorityNames.first(where: { $0.value == r.priority && $0.value != 0 })?.key { o["priority"] = p }
+  if let rule = r.recurrenceRules?.first, let f = repeatFrequencies.first(where: { $0.value == rule.frequency })?.key {
+    o["repeat"] = f
+    if rule.interval > 1 { o["repeatEvery"] = rule.interval }
+  }
+  return o
+}
+
+/// the fields shared by add and update; fails with a plain message before anything is saved
+func applyReminder(_ r: EKReminder, _ j: [String: Any]) {
+  if let t = j["title"] as? String { if t.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty { fail("A reminder needs a title.") }; r.title = t }
+  if let n = j["notes"] as? String { r.notes = n.isEmpty ? nil : n }
+  if let u = j["url"] as? String {
+    if u.isEmpty { r.url = nil } else if let url = URL(string: u), url.scheme != nil { r.url = url } else { fail("Couldn't read the link \"\(u)\".") }
+  }
+  if let p = j["priority"] as? String {
+    guard let v = priorityNames[p.lowercased()] else { fail("priority must be high, medium, low or none.") }
+    r.priority = v
+  }
+  if let due = j["due"] as? String {
+    if due.isEmpty { r.dueDateComponents = nil } else {
+      var c = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute], from: date(due))
+      c.timeZone = .current
+      r.dueDateComponents = c
+    }
+  }
+  if let rep = j["repeat"] as? String {
+    for rule in r.recurrenceRules ?? [] { r.removeRecurrenceRule(rule) }
+    if !rep.isEmpty && rep.lowercased() != "none" {
+      guard let f = repeatFrequencies[rep.lowercased()] else { fail("repeat must be daily, weekly, monthly, yearly or none.") }
+      let every = (j["repeatEvery"] as? Int) ?? 1
+      if every < 1 { fail("repeatEvery must be 1 or more.") }
+      r.addRecurrenceRule(EKRecurrenceRule(recurrenceWith: f, interval: every, end: nil))
+    }
+  }
+  if !(r.recurrenceRules ?? []).isEmpty && r.dueDateComponents == nil { fail("A repeating reminder needs a due date.") }
+  // a due time alone is silent in Reminders: add the alert unless asked not to
+  if j["due"] != nil || j["alarm"] != nil {
+    for a in r.alarms ?? [] where a.absoluteDate != nil { r.removeAlarm(a) }
+    if (j["alarm"] as? Bool) ?? true, let d = dueDate(r) { r.addAlarm(EKAlarm(absoluteDate: d)) }
+  }
+}
+
+func reminderLists() -> [EKCalendar] { store.calendars(for: .reminder).filter { $0.allowsContentModifications } }
+
+func reminderJSON(_ name: String) -> [String: Any] {
+  guard args.count >= 2, let data = args[1].data(using: .utf8), let j = try? JSONSerialization.jsonObject(with: data) as? [String: Any] else { fail("\(name) needs JSON options") }
+  return j
+}
+
+func findReminder(_ j: [String: Any]) -> EKReminder {
+  guard let id = j["id"] as? String, let r = store.calendarItem(withIdentifier: id) as? EKReminder else { fail("Couldn't find that reminder. List the reminders again and use the id shown there.") }
+  return r
+}
+
+
 switch args.first {
 case "calendar-status":
   out(["status": status()])
@@ -138,40 +208,43 @@ case "reminders":
       && (since == nil || !r.isCompleted || (r.completionDate ?? .distantPast) >= since!)
   }
   // open ones first, soonest due first (undated last); then completed ones, most recently completed first
-  func due(_ r: EKReminder) -> Date { r.dueDateComponents.flatMap { Calendar.current.date(from: $0) } ?? .distantFuture }
-  let open = matches.filter { !$0.isCompleted }.sorted { due($0) < due($1) }
+  let open = matches.filter { !$0.isCompleted }.sorted { (dueDate($0) ?? .distantFuture) < (dueDate($1) ?? .distantFuture) }
   let done = matches.filter { $0.isCompleted }.sorted { ($0.completionDate ?? .distantPast) > ($1.completionDate ?? .distantPast) }
   out((open + done)
-    .prefix(200).map { r in
-      var o: [String: Any] = ["title": r.title ?? "(no title)", "list": r.calendar.title]
-      o["completed"] = r.isCompleted
-      if let d = r.completionDate { o["completedOn"] = iso.string(from: d) }
-      if let n = r.notes, !n.isEmpty { o["notes"] = String(n.prefix(1000)) }
-      if let c = r.dueDateComponents, let d = Calendar.current.date(from: c) { o["due"] = iso.string(from: d) }
-      return o
-    })
+    .prefix(200).map(describe))
 case "add-reminder":
-  needReminderAccess()
-  guard args.count >= 2, let data = args[1].data(using: .utf8), let j = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
-        let title = j["title"] as? String, !title.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else { fail("add-reminder needs a title") }
+  let j = reminderJSON("add-reminder")
+  guard let title = j["title"] as? String, !title.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else { fail("add-reminder needs a title") }
   let r = EKReminder(eventStore: store)
-  r.title = title
-  if let n = j["notes"] as? String, !n.isEmpty { r.notes = n }
-  if let due = j["due"] as? String {
-    var c = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute], from: date(due))
-    c.timeZone = .current
-    r.dueDateComponents = c
-  }
+  applyReminder(r, j)
+  needReminderAccess()
   let name = j["list"] as? String
-  let lists = store.calendars(for: .reminder).filter { $0.allowsContentModifications }
+  let lists = reminderLists()
   guard let list = (name.flatMap { n in lists.first { $0.title.lowercased() == n.lowercased() } }) ?? store.defaultCalendarForNewReminders() ?? lists.first else {
     fail("There's no reminders list Hob can add reminders to.")
   }
   r.calendar = list
   do { try store.save(r, commit: true) } catch { fail("Couldn't add the reminder: \(error.localizedDescription)") }
-  var o: [String: Any] = ["title": title, "list": list.title]
-  if let c = r.dueDateComponents, let d = Calendar.current.date(from: c) { o["due"] = iso.string(from: d) }
-  out(o)
+  out(describe(r))
+case "update-reminder":
+  let j = reminderJSON("update-reminder")
+  needReminderAccess()
+  let r = findReminder(j)
+  applyReminder(r, j)
+  if let b = j["completed"] as? Bool { r.isCompleted = b }
+  if let n = j["list"] as? String {
+    guard let list = reminderLists().first(where: { $0.title.lowercased() == n.lowercased() }) else { fail("There's no reminders list called \"\(n)\" that Hob can change.") }
+    r.calendar = list
+  }
+  do { try store.save(r, commit: true) } catch { fail("Couldn't change the reminder: \(error.localizedDescription)") }
+  out(describe(r))
+case "delete-reminder":
+  let j = reminderJSON("delete-reminder")
+  needReminderAccess()
+  let r = findReminder(j)
+  let d = describe(r)
+  do { try store.remove(r, commit: true) } catch { fail("Couldn't delete the reminder: \(error.localizedDescription)") }
+  out(d)
 case "mail-status", "mail-auth":
   let ask = args.first == "mail-auth"
   let bundle = "com.apple.mail"

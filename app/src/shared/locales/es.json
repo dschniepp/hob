@@ -783,5 +783,14 @@
   "Searched your reminders for “{query}”": "Búsqueda de «{query}» en tus recordatorios",
   "Reminders": "Recordatorios",
   "Allow Reminders": "Permitir Recordatorios",
-  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "Para usar Recordatorios, permite a Hob en Ajustes del Sistema → Privacidad y seguridad → Recordatorios."
+  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "Para usar Recordatorios, permite a Hob en Ajustes del Sistema → Privacidad y seguridad → Recordatorios.",
+  "Ticked off “{title}”": "«{title}» completado",
+  "Changed “{title}” in Reminders": "«{title}» cambiado en Recordatorios",
+  "Tick off “{title}” in Reminders?": "¿Completar «{title}» en Recordatorios?",
+  "New title: {name}": "Nuevo título: {name}",
+  "Mark as done": "Marcar como completado",
+  "Mark as not done": "Marcar como no completado",
+  "Deleted “{title}” from Reminders": "«{title}» eliminado de Recordatorios",
+  "Delete “{title}” from Reminders?": "¿Eliminar «{title}» de Recordatorios?",
+  "Change “{title}” in Reminders?": "¿Cambiar «{title}» en Recordatorios?"
 }

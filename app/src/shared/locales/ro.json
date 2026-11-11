@@ -783,5 +783,14 @@
   "Searched your reminders for “{query}”": "S-a căutat „{query}” în mementourile tale",
   "Reminders": "Mementouri",
   "Allow Reminders": "Permite Mementouri",
-  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "Pentru a folosi Mementouri, permite Hob în Setări sistem → Confidențialitate și securitate → Mementouri."
+  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "Pentru a folosi Mementouri, permite Hob în Setări sistem → Confidențialitate și securitate → Mementouri.",
+  "Ticked off “{title}”": "„{title}” bifat",
+  "Changed “{title}” in Reminders": "„{title}” modificat în Mementouri",
+  "Tick off “{title}” in Reminders?": "Bifez „{title}” în Mementouri?",
+  "New title: {name}": "Titlu nou: {name}",
+  "Mark as done": "Marchează ca finalizat",
+  "Mark as not done": "Marchează ca nefinalizat",
+  "Deleted “{title}” from Reminders": "„{title}” a fost șters din Mementouri",
+  "Delete “{title}” from Reminders?": "Șterg „{title}” din Mementouri?",
+  "Change “{title}” in Reminders?": "Modific „{title}” în Mementouri?"
 }

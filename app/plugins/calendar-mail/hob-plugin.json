@@ -29,7 +29,13 @@
     },
     {
       "native": "reminder_add"
+    },
+    {
+      "native": "reminder_update"
+    },
+    {
+      "native": "reminder_delete"
     }
   ],
-  "prompt": "For the user's calendar use calendar_events and calendar_add_event; for email use mail_search, mail_read and mail_draft (drafts only: the user sends); for Reminders use reminders_list and reminder_add (ask before adding; macOS asks for Reminders access the first time). They use the calendar and email the user connected (a Google or Microsoft account, or the Mac's Calendar and Mail apps): don't ask the user to set up a connector for Google Calendar, Gmail or Outlook. If a tool says nothing is connected, tell the user how to connect."
+  "prompt": "For the user's calendar use calendar_events and calendar_add_event; for email use mail_search, mail_read and mail_draft (drafts only: the user sends); for Reminders use reminders_list, reminder_add (with an alert, repeat, priority or link when asked), reminder_update (also to tick one off) and reminder_delete (they need the id reminders_list shows; list first; the user is asked before each change; macOS asks for Reminders access the first time). They use the calendar and email the user connected (a Google or Microsoft account, or the Mac's Calendar and Mail apps): don't ask the user to set up a connector for Google Calendar, Gmail or Outlook. If a tool says nothing is connected, tell the user how to connect."
 }

@@ -711,5 +711,14 @@
   "Searched your reminders for “{query}”": "ค้นหา “{query}” ในการเตือนความจำของคุณ",
   "Reminders": "การเตือนความจำ",
   "Allow Reminders": "อนุญาตการเตือนความจำ",
-  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "หากต้องการใช้การเตือนความจำ ให้อนุญาต Hob ในการตั้งค่าระบบ → ความเป็นส่วนตัวและความปลอดภัย → การเตือนความจำ"
+  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "หากต้องการใช้การเตือนความจำ ให้อนุญาต Hob ในการตั้งค่าระบบ → ความเป็นส่วนตัวและความปลอดภัย → การเตือนความจำ",
+  "Ticked off “{title}”": "ทำ “{title}” เสร็จแล้ว",
+  "Changed “{title}” in Reminders": "เปลี่ยน “{title}” ในการเตือนความจำแล้ว",
+  "Tick off “{title}” in Reminders?": "ทำ “{title}” ในการเตือนความจำเสร็จไหม",
+  "New title: {name}": "ชื่อใหม่: {name}",
+  "Mark as done": "ทำเครื่องหมายว่าเสร็จแล้ว",
+  "Mark as not done": "ทำเครื่องหมายว่ายังไม่เสร็จ",
+  "Deleted “{title}” from Reminders": "ลบ “{title}” ออกจากการเตือนความจำแล้ว",
+  "Delete “{title}” from Reminders?": "ลบ “{title}” ออกจากการเตือนความจำไหม",
+  "Change “{title}” in Reminders?": "เปลี่ยน “{title}” ในการเตือนความจำไหม"
 }

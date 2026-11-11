@@ -711,5 +711,14 @@
   "Searched your reminders for “{query}”": "미리 알림에서 “{query}” 검색했습니다",
   "Reminders": "미리 알림",
   "Allow Reminders": "미리 알림 허용",
-  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "미리 알림을 사용하려면 시스템 설정 → 개인정보 보호 및 보안 → 미리 알림에서 Hob을 허용하세요."
+  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "미리 알림을 사용하려면 시스템 설정 → 개인정보 보호 및 보안 → 미리 알림에서 Hob을 허용하세요.",
+  "Ticked off “{title}”": "“{title}”을(를) 완료했습니다",
+  "Changed “{title}” in Reminders": "미리 알림에서 “{title}”을(를) 변경했습니다",
+  "Tick off “{title}” in Reminders?": "미리 알림의 “{title}”을(를) 완료할까요?",
+  "New title: {name}": "새 제목: {name}",
+  "Mark as done": "완료로 표시",
+  "Mark as not done": "미완료로 표시",
+  "Deleted “{title}” from Reminders": "미리 알림에서 “{title}”을(를) 삭제했습니다",
+  "Delete “{title}” from Reminders?": "미리 알림에서 “{title}”을(를) 삭제할까요?",
+  "Change “{title}” in Reminders?": "미리 알림의 “{title}”을(를) 변경할까요?"
 }

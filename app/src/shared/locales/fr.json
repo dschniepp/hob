@@ -783,5 +783,14 @@
   "Searched your reminders for “{query}”": "Recherche dans vos rappels : « {query} »",
   "Reminders": "Rappels",
   "Allow Reminders": "Autoriser les Rappels",
-  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "Pour utiliser les Rappels, autorisez Hob dans Réglages Système → Confidentialité et sécurité → Rappels."
+  "To use Reminders, allow Hob in System Settings → Privacy & Security → Reminders.": "Pour utiliser les Rappels, autorisez Hob dans Réglages Système → Confidentialité et sécurité → Rappels.",
+  "Ticked off “{title}”": "« {title} » coché",
+  "Changed “{title}” in Reminders": "« {title} » modifié dans Rappels",
+  "Tick off “{title}” in Reminders?": "Cocher « {title} » dans Rappels ?",
+  "New title: {name}": "Nouveau titre : {name}",
+  "Mark as done": "Marquer comme terminé",
+  "Mark as not done": "Marquer comme non terminé",
+  "Deleted “{title}” from Reminders": "« {title} » supprimé de Rappels",
+  "Delete “{title}” from Reminders?": "Supprimer « {title} » de Rappels ?",
+  "Change “{title}” in Reminders?": "Modifier « {title} » dans Rappels ?"
 }
