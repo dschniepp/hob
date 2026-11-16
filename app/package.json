@@ -19,7 +19,7 @@
     "electron-updater": "6.8.10",
     "katex": "0.16.47",
     "linkedom": "0.18.13",
-    "node-llama-cpp": "3.22.1",
+    "node-llama-cpp": "3.22.3",
     "recharts": "3.10.1",
     "rehype-katex": "7.0.1",
     "remark-math": "6.0.0"
